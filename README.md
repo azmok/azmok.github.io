@@ -1,0 +1,2 @@
+# HatenaBlog-AdditionalCode
+aaa
