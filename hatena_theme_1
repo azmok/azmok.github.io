@@ -1,0 +1,207 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body{ background-image: url('http://cdn-ak.f.st-hatena.com/images/fotolife/D/DDramonQ/20160410/20160410012735.png'); background-repeat: repeat; background-color:transparent; background-attachment: scroll; background-position: center top;
+}
+
+/* ページ下部id等 */
+#footer{
+    width:100%;
+    margin:0;
+    padding-top:0.8em;
+    padding-bottom:0.4em;
+    background-color:#393A33;
+    font-size:99%;
+    border-bottom:0.7em solid #FFBB00;
+    border-top:0.2em dashed #EDDEBD;
+}
+
+/* ページ下部 中身コンテナ */
+#footer-inner{
+    width:100%;
+    margin:0;
+    color:#fffffa;
+    text-align:center;
+}
+
+/*上ステータスバーコンテナ */
+#globalheader-container{
+    background-color:#212222;
+    color:#fffffa;
+}
+
+
+/* 広告 
+#google_afc_user{
+    width:90%;
+    margin:auto;
+    padding:auto;
+}
+*/
+
+.entry-footer{
+    width:90%;
+    margin:auto;
+}
+
+
+
+/* ヘッダー */
+#top-editarea{
+    margin:4%;
+}
+
+
+.entry{
+    padding:1em;
+}
+
+#bq2 {
+
+font-size:98%;
+font-family:italic Times, serif;
+padding:1.2em;
+background-color: #faebbc;
+border-top: 1px solid #e1cc89;
+border-bottom: 1px solid #e1cc89;
+margin: auto;
+text-indent: 3em;
+}
+
+#bq1{
+    background-color:#212223;
+    color:#fffffa;
+    margin:auto;
+    padding:1.2em;
+    font-family:'times new roman';
+}
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 98%;
+font-style: italic;
+width: 95%;
+margin: 0.25em 0;
+padding: 0.25em 1.2em;
+line-height: 1.45;
+position: relative;
+color: #383838;
+background-color:#EDDEBD  ;
+}
+
+/* 引用マーク*/
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 200%;
+position: absolute;
+left: -1em;
+top: -2em;
+color: #7a7a7a;
+}
+/*エムダッシュ(ー) ,小スペース*/
+ 
+blockquote cite {
+color: #999999;
+font-size: 0.8em;
+display: block;
+margin-top: 0.5em;
+}
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
+#blog-title {
+    background-image: url('http://cdn-ak.f.st-hatena.com/images/fotolife/D/DDramonQ/20160410/20160410012605_original.jpg'); 
+    background-size:120%;
+    width:100%;
+    height:100%;
+    background-position: center top;
+    text-align:center;
+    margin-top:-1em;
+    padding-top:2em;
+}
+
+#blog-title a{
+    font-size:102%;
+    font-family:  'Verdana' ;
+    font-weight:600;
+    color:#3399ff;
+}
+
+
+#blog-description{
+    font-family: 'Hiragino Kaku Gothic ProN','Hiragino Maru Gothic ProN',"Trebuchet MS","Impact", 'Verdana'  ;
+    font-size:98%;
+    color:#fffffa;
+    text-align:center;
+    margin:-0.4em 0 2.5em 0;
+    padding-top:0;
+}
+
+#box2 {background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160415/20160415033230.png');
+       background-repeat:repeat;
+       padding:1.5em 2.5em 1.5em 2.5em;
+}
+
+
+.entry-title::before{
+	position: absolute;
+	content: '';
+}
+
+.entry-title::before {
+	top:1em;
+    left: 0.3em;
+    width: 18px;
+	height: 18px;
+	background: black;
+}
+
+.entry-title{
+  font-family:'Avenir Next', 'Verdana', 'Yu Gothic', 'Hiragino Maru               Gothic ProN' ;
+  font-size:100%;
+  font-weight:800;
+  background-color:rgba(255,184,76,1.0);
+  border-top: 3px solid #383B35;
+  border-bottom:1px solid #383B35;
+  padding-top:1.2em; 
+  padding-bottom:0.3em;
+  padding-left:2em;
+  position:relative;
+} 
+
+
+a.entry-title-link.bookmark{
+    color:#222222;
+    font-size:1.1em;
+    font-family: "Avenir Next", 'Verdana' , "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif, "Hiragino Maru Gothic ProN";
+    text-decoration:none;
+} 
+
+a.entry-title-link.bookmark:hover{
+    color:#777776;
+}
+
+.entry-content p, div {
+    font-family: "Avenir Next", 'Verdana' , "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif, "Hiragino Maru Gothic ProN";
+    font-size:99%;
+}
+
+/*見出し*/
+.entry-content h3 {
+    font-size:1.1em;
+    font-weight:800;
+    color:#212222;
+    background-color:rgba(255,227,156,0.8);
+    border-top:1px dashed #51554D;
+    border-bottom:1px dashed #51554D;
+    padding:0.7em 0 0.5em 0.7em;
+}
+
+
+
+#bottom-editarea{
+    width:100%;
+   
+    font-size:98%;
+}
