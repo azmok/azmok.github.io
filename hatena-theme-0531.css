@@ -1,0 +1,341 @@
+ 
+body{font-family: 'NotoSansCJKjp-Regular','Exo 2',serif;
+    background-color:#FEFEFC;}
+#globalheader-container{
+    background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160503/20160503204631.png');background-color:white;
+    background-repeat:repeat;
+    background-color:rgba(0,0,0,0.28);
+    color:white;
+    border-bottom:1.2px solid white;
+}
+#blog-title{
+    box-sizing:border-box;
+    width:100%;
+    height:8rem;
+    background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160515/20160515231912.jpg');
+    background-position:top left;
+    background-size:100%;}
+#title{box-sizing:border-box;
+    background-color:rgba(0,185,191,0.5);
+    height:3rem;
+    width:15rem;
+    border:1px solid rgba(0,185,191,0.5);
+    border-radius:4px;
+    margin-top:0px;
+    padding:1rem 0 0 1.5rem ;
+    word-wrap:break-word;}
+#title a{
+    font-family:'07 LogoTypeGothic';
+    line-height:0.8em;
+    font-size:1rem;
+    font-weight:700;
+    color:white;
+    display:block;
+    text-decoration:none;}
+#title a:hover{color:#FFAC00;}
+#blog-description{position:relative;
+    top:-150px;
+    left:40%;
+    width:340px;
+    height:67px;
+    color:#FEFFEC;
+    font-family:'Quattrocento',serif;
+    font-style:italic;
+    font-size:19px;
+    word-wrap:break-word;
+    opacity:0.5;}
+#top-editarea{
+    width:100%;
+    height:50px;
+    position:relative;
+    top:-3rem;
+}
+.entry{width:100%;
+    box-sizing:border-box;
+    padding:0 30px 0 30px;
+    margin-bottom:5.5em;
+}
+.entry-inner{
+    border-bottom:7px double lightgray;}
+.date{margin-top:0;
+      margin-bottom:-0.7em;
+      font-size:15px;
+      font-style:italic;
+      font-family:'Quattrocento';
+      position:relative;
+      z-index:1;
+      top:15px;
+      left:20px;}
+.date a{text-decoration:none;
+     background:transparent;
+     padding:0.3em 0.3em;
+    color:gray;}
+.page-entry .entry-title{width:100%;
+    box-sizing: border-box;
+background:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160527/20160527024922.png');
+  font-family:'07 LogoTypeGothic', 'Exo 2',sans-serif;
+  font-weight:700;
+  line-height:30px;
+  letter-spacing:-1px;
+  padding-top:35px; 
+  padding-bottom:45px;
+  padding-left:1px;
+  margin:0;
+  position:relative;}
+.page-entry .entry-title a{
+    color:black;
+    font-size:30px;
+    text-decoration:none;}
+.page-entry .entry-title a:hover{
+    color:orange;}
+.entry-categories{width:100%;
+    box-sizing:border-box;
+    position:relative;
+    top:-50px;
+    font-family:'07 YasashisaGothic','Exo 2', sans-serif;
+    text-align:right;
+    padding:1em 1em;
+    font-size:12px;
+    margin-bottom:1em;}
+.entry-categories a{
+    text-decoration:none;
+    background-color:gray;
+    color:white;
+    border:1px solid gray;
+    border-radius:3px;
+    padding:3px 3px;}
+.entry-content{
+    font-family:'NotoSansCJKjp-Light','Open Sans',Sans-serif;
+    font-size:15px;
+    line-height:1.6rem;
+   letter-spacing:-0.7px;
+}
+.entry-content a{font-family:'Exo 2';
+    color:gray;
+    font-style:italic; 
+    font-size:13px;
+    letter-spacing:normal;}
+.entry-content ul{background-color:white;
+   list-style-type:square;}
+.entry-content ul li {clear:both;}
+h3{ font-family:'07 LogoTypeGothic','Open Sans';
+    font-size:30px;
+    letter-spacing:-1px;
+    font-weight:700;
+    box-sizing:border-box;
+    display:block;
+    margin:20px 4rem 25px 0;
+    padding:10px 1px;
+    line-height:1em;
+}
+h4{font-family:'07 LogoTypeGothic','Open Sans';
+    font-size:22px; 
+    letter-spacing:-1px;
+    font-weight:700;
+    display:block;
+    box-sizing:border-box;
+    margin:10px 7rem 25px 0;
+    padding:8px 0 0 30px;}
+h5{font-size:17px;
+   font-family:'07 LogoTypeGothic';
+font-weight:400;
+   margin:0;}
+.entry-footer{
+    color:#66695A;
+    box-sizing:border-box;
+    padding:0.5em 1em;
+    width:100%;
+    margin:0;
+    font-size:11px;}
+.entry-footer a{
+	text-decoration:none;
+    color:#66695A;}
+.entry-footer-section{display:none;}
+.pager{clear:both;
+    width:300px;
+    height:90px;
+    margin:auto;
+    display:block;}
+.pager-next a{display:block;
+    background-color:#555b60;
+    color:#ffffff;
+    padding:14px 25px 14px 7px;
+    text-decoration:none;
+    box-sizing:border-box;
+    border-width:0px 3px 2px 0;
+    border-style: solid;
+    border-radius:0 100% 100% 0;
+    line-height:80%;
+    font-size:11.5px;}
+.pager-prev a{ display:block;
+    background-color:#555b60;
+    color:#ffffff;
+    padding:14px 7px 14px 25px;
+    text-decoration:none;
+    text-align:right;
+    box-sizing:border-box;
+    border-width:0px 3px 2px 0;
+    border-style: solid;
+    border-radius:100% 0 0 100%;
+    line-height:80%;
+    font-size:11.5px;}
+.pager-next a:hover{background-color:orange;}
+.pager-prev a:hover{background-color:orange;}
+#footer{display:none;}
+#bottom-editarea{
+    clear:left;
+    font-size:0.75em;
+    width:100%;
+    height:300px;
+    background-color:#343434;
+    vertical-align:middle;
+}
+#bottom-editarea a{
+    color:orange;
+    }
+#footer{display:none;}
+
+
+/*  ______________ Content cascading  ______________*/
+
+.ll-normal{line-height:normal;
+    letter-spacing:normal;}
+.f-con4{display:-webkit-flex;
+    display:flex;
+    width:800px;
+    height:800px;
+    background: #f2f2f2;}
+.f-item4{width:180px;
+	padding:2px;
+	margin:auto;
+    background:#ffa64d;
+}
+.line-f2-5px{content: '';
+    background: #f2f2f2;
+    width: 60%;
+    height: 5px;}
+.keyword{text-decoration:none; border-bottom:1px dashed #3571C4; }
+.hatena-fotolife{box-shadow:2px 2px 4px 0 #f3f3f3;}
+blockquote {
+    font-family:'NotoSansCJKjp-Thin','Exo 2','Open Sans',Sans-serif;
+    font-size: 99%;
+    width: 80%;
+    margin:2.5em 0 2.5em 20%;
+    box-sizing:border-box;
+    border:1px solid lightgray;
+    padding: 2em 2em;
+    position: relative;
+    color: dimgray;
+    border-left: 10px solid #ccc;
+    background-color:#f9f9f9;}
+blockquote:before {
+   display: block;
+    content: "\201C";
+    font-size: 800%;
+    position: absolute;
+    left:-0.14em;
+    top:0.15em;
+    color: #7a7a7a;}
+blockquote cite {
+    box-sizing:border-box;
+    border-top:1px dashed gray;
+    display:block;
+    font-size:100%;
+    margin-top:1em;
+    padding-top:1em;
+    padding-left:1.3em;}
+blockquote cite a{
+    font-family:'Lato','PT Sans';
+    text-decoration:none;
+    font-style:normal;
+    color:gray;}
+blockquote cite::before {content: "[via] \2009";}
+/*.keyword{text-decoration:none; border-bottom:1px dashed #3571C4; }*/
+.sss{display:block; margin:auto;}
+
+
+
+.page-index .entry{
+    float:left;
+    width:45%;
+    height:300px;
+    margin:20px 0 20px 2.5%;
+    padding:0;
+    overflow:hidden;
+    box-sizing:border-box;
+    border:2px solid #212222;
+    border-radius:4px;
+    display:block;}
+.page-index .entry:hover{
+    background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160515/20160515231912.jpg');
+    opacity:0.8;
+}
+.page-index .entry:active{
+    background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160515/20160515231912.jpg');
+    opacity:0.6;}
+    
+    
+.page-index .entry-title{
+    font-family: '07 LogoTypeGothic','Exo 2';
+    background:black;
+    line-height:1em;
+    margin-top:-1.2rem;
+    padding:2rem 1rem 2.5rem 1rem;}
+.page-index .entry-title a{
+    font-size:0.92em;
+    color:white;}
+.page-index .entry-title a:hover{
+    color:lightgray;}
+.page-index .entry-title a:active{
+    color:gray;}
+.page-index .categories{
+    line-height:2em;
+    top:-60px;
+}
+.page-index .categories a{
+    background:white;
+    color:black;
+    border:none;}
+.page-index .date a{
+    color:white;}
+.page-index .date{
+    top:0.5rem;
+}
+.page-index .entry-content{
+    margin-top:-50px;
+}
+
+
+/* _____________ Archive page _____________*/
+
+
+.archive-entries{
+    width:100%;
+    box-sizing:border-box;
+    padding:0 20px 0 20px;}
+.page-archive .autopagerize_page_element{
+    font-size:11px;
+    float:left;
+    width:32.6%;
+    height:225px;
+    margin:0.1em;
+    padding:0.1em;
+    overflow:hidden;
+    box-sizing:border-box;
+    border:1px solid black;
+    display:block;}
+.page-archive .date{
+    position:relative;
+    top:3px;
+    left:8px;}
+.page-archive .entry-title{
+    margin:0;
+    padding:10px 0 0 0;}
+.entry-title-link{
+    color:#212222;
+    text-decoration:none;}
+.entry-title-link a:hover{
+    color:gray;}
+.page-archive .categories a{
+    background-color:dimgray;
+    color:white;}
