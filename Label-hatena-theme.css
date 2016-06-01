@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans); /* pt sans 3,7 */
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin);/* Lato 3,4,7,9,ita  */
+@import url('http://dl.dropbox.com/s/hf1dnlvqc9rdkdk/styles.css?dl=0');
+/*light novel pop*/
+@import url('https://dl.dropbox.com/s/ti2exua8p7trnp6/font-awesome.css?dl=0');
+@font-face{font-family:"NotoSansCJKjp-Regular";font-weight:400;src:url('https://dl.dropbox.com/s/fpiex4opt220zik/NotoSansCJKjp-Regular400.woff?dl=0'); }
+@font-face{font-family:"NotoSansCJKjp-Light";font-weight:300;src:url('https://dl.dropbox.com/s/zgi6hq25ns6xcqo/NotoSansCJKjp-Light300.woff?dl=0'); }
+@font-face{font-family:"NotoSansCJKjp-Bold";font-weight:700;src:url('https://dl.dropbox.com/s/0txbtna0s4h02p3/NotoSansCJKjp-Bold700.woff?dl=0'); }
+@font-face{
+    font-family:"PixelMplus12-Regular";
+    src:url('https://dl.dropbox.com/s/0y785bkmfossr4s/PixelMplus12-Regular.woff?dl=0');
+    font-weight:Regular;}
+@font-face {
+font-family: '07 LogoTypeGothic';
+src: url("https://dl.dropbox.com/s/t7f8ivnbzxiv9ma/%E3%83%AD%E3%82%B4%E3%81%9F%E3%81%84%E3%81%B7%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF%2807%20LogoTypeGothic%29.otf?dl=0")  format("opentype");}
+@font-face {font-family: 'XANO明朝'; src: url("https://dl.dropbox.com/s/55i5cqu1w5bj3te/XANO-mincho-U32.otf?dl=0")  format("opentype");}
+@font-face{font-family:'07 YasashisaGothic'; src:url('https://dl.dropbox.com/s/sbf0gl5seehj77n/07%E3%82%84%E3%81%95%E3%81%97%E3%81%95%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF.ttf?dl=0') format('truetype'); }
+body{font-family: 'NotoSansCJKjp-Regular','Exo 2',serif;
+    background:#fdfdfd url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160527/20160527024922.png') repeat right top;}
+#globalheader-container{
+    background:#FF7CB9;
+    color:white;
+    margin-top:3.5rem;
+    padding:0.2rem 0.2rem;
+    width:70%;
+    position:absolute;
+    right:0;
+    font-family:'07 LogoTypeGothic','Exo 2';}
+/*#iframe#globalheader{
+    margin:0;
+    padding:0;} */
+#blog-title{width:93%;
+    color:white;
+    padding-bottom:12rem;
+    margin:0.7rem 0 0 2rem;}
+#title a{
+    background:#FF3B77;
+    box-sizing:border-box;
+    padding:1.2rem 1.6rem;
+    color:#f2f2f2;
+    text-decoration:none;
+    border:none;}
+#title{position:absolute;
+top:3px;
+left:0;
+    font-family:'07 YasashisaGothic';
+    font-size:100%;}
+#blog-description{
+    color:white;
+    background:#343434;
+    position:absolute;
+    top:7.5rem;
+    left:2.2rem;
+    padding:0.5rem 1.5em;
+    font-family:'07 LogoTypeGothic';
+    font-weight:300;
+    font-size:80%;
+}
+#content{margin:3.2rem 2rem;}
+a{text-decoration:none;
+    color:dimgray;
+}
+.entry{padding-bottom:7em;
+    }
+.entry-inner{background:#FEFEFC;
+    border-top:3px solid lightgray;
+    border-bottom:3px solid lightgray;
+    border-radius:3px;
+    box-shadow:5px 5px 10px 0 rgba(76, 76, 103,0.7);
+    padding:2rem 1.5rem 2.3rem 1.5rem;}
+.categories a{
+    border-width:2px 2px 2px 6px;
+    border-style:solid;
+    border-color:#01ACB0;
+    color:dimgray;
+    padding:0 0.4em;}
+.entry-title a{
+    box-sizing:border-box;
+    border:1px solid #00C4FF;
+    border-radius:0 5px 5px 0;
+    color:white;
+    background:#00C4FF;
+    font-family:'NotoSansCJKjp-Bold','Exo 2';
+    font-weight:700;
+    position:relative;
+    left:-4rem;
+    padding:0.5rem 2rem;
+    word-break:break-all;
+    line-height:2.3em;
+}
+/*
+.entry-content{}  */
+.entry-content a{
+    border-bottom:1px dashed gray;
+}
+.entry-footer-section{display:none;}
+.entry-footer{margin:5em 0 0.8em 0;
+    border-top:2px solid lightgray;}
+#footer{background:#FFAB00;
+color:dimgray;
+    margin-right:60%;}
+#footer a{
+    color:dimgray;}
