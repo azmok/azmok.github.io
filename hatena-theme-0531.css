@@ -1,4 +1,20 @@
- body{font-family: 'NotoSansCJKjp-Regular','Exo 2',serif;
+@import url(https://fonts.googleapis.com/css?family=PT+Sans); /* pt sans 3,7 */
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin-ext,latin);/* Lato 3,4,7,9,ita  */
+@import url('http://dl.dropbox.com/s/hf1dnlvqc9rdkdk/styles.css?dl=0');
+/*light novel pop*/
+@import url('https://dl.dropbox.com/s/ti2exua8p7trnp6/font-awesome.css?dl=0');
+@font-face{font-family:"NotoSansCJKjp-Regular";font-weight:400;src:url('https://dl.dropbox.com/s/fpiex4opt220zik/NotoSansCJKjp-Regular400.woff?dl=0'); }
+@font-face{font-family:"NotoSansCJKjp-Light";font-weight:300;src:url('https://dl.dropbox.com/s/zgi6hq25ns6xcqo/NotoSansCJKjp-Light300.woff?dl=0'); }
+@font-face{font-family:"NotoSansCJKjp-Bold";font-weight:700;src:url('https://dl.dropbox.com/s/0txbtna0s4h02p3/NotoSansCJKjp-Bold700.woff?dl=0'); }
+@font-face{
+    font-family:"PixelMplus12-Regular";
+    src:url('https://dl.dropbox.com/s/0y785bkmfossr4s/PixelMplus12-Regular.woff?dl=0');
+    font-weight:Regular;}
+@font-face {
+font-family: '07 LogoTypeGothic';
+src: url("https://dl.dropbox.com/s/t7f8ivnbzxiv9ma/%E3%83%AD%E3%82%B4%E3%81%9F%E3%81%84%E3%81%B7%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF%2807%20LogoTypeGothic%29.otf?dl=0")  format("opentype");}
+@font-face{font-family:'07 YasashisaGothic'; src:url('https://dl.dropbox.com/s/sbf0gl5seehj77n/07%E3%82%84%E3%81%95%E3%81%97%E3%81%95%E3%82%B4%E3%82%B7%E3%83%83%E3%82%AF.ttf?dl=0') format('truetype'); }
+body{font-family: 'NotoSansCJKjp-Regular','Exo 2',serif;
     background-color:#FEFEFC;}
 #globalheader-container{
     background-image:url('http://img.f.hatena.ne.jp/images/fotolife/D/DDramonQ/20160503/20160503204631.png');background-color:white;
