@@ -1,0 +1,82 @@
+*:not(ul) {
+	margin:0;
+	padding:0;
+	box-sizing:border-box; }
+body {
+    font-family: -apple-system;
+    }
+ul,
+li {
+   display: table;
+   }
+ul>li {
+   letter-spacing: .5px;
+   line-height: 2em;
+   font-weight: bold;
+   }
+ul.first {
+   margin-top: 2rem;
+   border-top: 2px solid #eaeaea;
+   padding: 1rem 0 0 0;
+   }
+ul.first ul ul li {
+   list-style: none;
+   font-size:13px;
+   opacity: 0.7;
+   }
+ul.first .title {
+   font-size: 28px;
+   font-weight: bold;
+   color: #333;
+   }
+.second {
+   /*display: none;*/
+   }
+#container {
+   padding: 3em 3em;
+   }
+.date-ant {
+    display:none;
+    }
+.table_of_contents {
+   font-weight: 600;
+   }
+.progress {
+   font-weight: bold;
+   color: #fff;
+   margin-left: 0.5em;
+   font-weight: 400;
+   font-size: 12px;
+   padding:2px 2px;
+   border-radius: 4px;
+   }
+.wd {
+   background: #ee6666;
+   }
+.gn {
+   background: #bb6666;
+   }
+.rec {
+   background: #6666ee;
+   }
+h3.api {
+   font-size: 28px;
+   color: #fff;
+   background: orange;
+   padding: 0.5em 1em;
+   }
+.semid {
+   font-size: .75em;
+   color: #aaa;
+   font-style: italic;
+   }
+.mid {
+   font-size: .5em;
+   color: #aaa;
+   font-style: italic;
+   }
+#idl {
+   margin: 3rem 3rem;
+   padding: 0 .25rem;
+   border: 2px dashed #aaa;
+   }
