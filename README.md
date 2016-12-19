@@ -1,4 +1,4 @@
-#Training Repositor
+#Training Repository
 練習レポジトリです。
 Code初心者なので、コード汚いです、すみません(汗)
 
