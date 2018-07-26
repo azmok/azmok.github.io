@@ -3,6 +3,4 @@
 Code初心者なので、コード汚いです、すみません(汗)
 
 ###demo & my training
-- main http://kazumatojo.github.io
 - W3C spec list http://kazumatojo.github.io/spec_list/spec_list
-- html architecture( hatena blog) http://kazumatojo.github.io/tool/visualize
