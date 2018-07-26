@@ -1,18 +1,31 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
-   <title>はてなブログテーマ</title>
-   <meta charset="UTF-8">
-   <meta name="description" content="和馬のはてなブログテーマ">
-   <meta name="keyword" content="はてなブログテーマ, css"> 
-   <meta name="author" content="東条和馬">
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="css/style.css" />
+   <title>visualizeHTML.js</title>
 </head>
 <body>
-  <h1>テストでございます</h1>
-  <p>初めてのWebページです。表示されるか心配ですw</p>
-  <p>
-     <a href="https://KazumaTojo.github.io/tool/visualize.html">Visualized Page
-     </a>
-  </p>
+   <div class="a">a
+      <div class="aa">a>a1>a
+         <div class="aaa">a>a1>a
+            <div class="aaaa">a>a1>a>a</div>
+         </div>
+      </div>
+      <div class="aa">a>a2</div>
+   </div>
+   
+   <div class="b">b
+      <div class="b someclass">
+         <a>b>b</a>
+      </div>
+   </div>
+   
+   <script src="js/visualizeHTML.js"></script>
+   <script>
+   visualizeHTML(body, 0, 5);
+   
+   </script>
 </body>
 </html>
