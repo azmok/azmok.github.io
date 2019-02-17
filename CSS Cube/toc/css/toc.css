@@ -41,3 +41,87 @@ footer{
 .credit{
   margin-top: 3rem;
 }
+
+/* signal once */
+.trigger1,
+.trigger2,
+.trigger3{
+  position: relative;
+  overflow: hidden;
+}
+.trigger1::before,
+.trigger2::before,
+.trigger3::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  border-radius: 50%;
+  
+  transform: translate(-50%,-50%) scale(0,0);
+  transform-origin: 50% 50%;
+}
+.trigger1::before{
+  background: #389CFF;
+  animation: signalA 1.7s linear 0.7s 2 normal forwards;
+}
+.trigger2::before{
+  background: #FFD000;
+  animation: signalB 1.7s linear 0.7s 2 normal forwards;
+}
+.trigger3::before{
+  background: #D10C57;
+  animation: signalC 1.7s linear 0.7s 2 normal forwards;
+}
+@keyframes signalA{
+  0%  {
+    transform: translate(-50%,-50%) scale(0,0);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  50%  {
+    transform: translate(-50%,-50%) scale(1.6,1.6);
+    opacity: 0.25;
+    animation-timing-function: ease-out;
+  }
+  100%{
+    transform: translate(-50%,-50%) scale(2.3,2.3);
+    opacity: 0;
+  }
+}
+@keyframes signalB{
+  0%  {
+    transform: translate(-50%,-50%) scale(0,0);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  50%  {
+    transform: translate(-50%,-50%) scale(1.6,1.6);
+    opacity: 0.25;
+    animation-timing-function: ease-out;
+  }
+  100%{
+    transform: translate(-50%,-50%) scale(2.3,2.3);
+    opacity: 0;
+  }
+}
+@keyframes signalC{
+  0%  {
+    transform: translate(-50%,-50%) scale(0,0);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  50%  {
+    transform: translate(-50%,-50%) scale(1.6,1.6);
+    opacity: 0.25;
+    animation-timing-function: ease-out;
+  }
+  100%{
+    transform: translate(-50%,-50%) scale(2.3,2.3);
+    opacity: 0;
+  }
+}
