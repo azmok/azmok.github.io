@@ -48,6 +48,7 @@ footer{
 .trigger3{
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .trigger1::before,
 .trigger2::before,
