@@ -32,6 +32,8 @@ h2{
 }
 h2:hover{
   cursor: pointer;
+  user-select: none !important;
+  -webkit-user-select: none !important;
 }
 h3{
   font-size: 1.125rem;
