@@ -27,6 +27,7 @@ h1{
 h2{
   margin-top: 1rem;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 h3{
   font-size: 1.125rem;
@@ -48,7 +49,6 @@ footer{
 .trigger3{
   position: relative;
   overflow: hidden;
-  cursor: pointer;
 }
 .trigger1::before,
 .trigger2::before,
