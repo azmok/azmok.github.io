@@ -15,7 +15,11 @@ body{
 }
 .container{
   border: 10px solid #FFCCCB;
-  padding: 3rem;
+}
+.container-inner{
+  padding: 3rem 0;
+  max-width: 800px;
+  margin: auto;
 }
 .inset{
   margin-left: 1rem;
