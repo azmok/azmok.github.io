@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <!--<meta name="viewport" content="width=340, initial-scale=1.7" />-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Webアプリ 半角カナ変換</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <link rel="stylesheet" href="css/main.css" />
+</head>
+<body class="dark-m">
+
+
+<div class="container">
+   <header>
+      <div class="header-inner">
+         <div class="svg"></div>
+         <h1 class="dark-m">半角カナ変換.App</h1>
+      </div>
+   </header>
+
+   <!-- Input  -->
+   <textarea rows="5" id="io-in" class="io-in dark-d" placeholder="テキストを入力して下さい"></textarea>
+
+   <div class="arrow">
+      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+   </div>
+   
+   <!-- Buttons  -->
+   <div class="btn-wrapper">
+      <button type="button" data-clipboard-target="#io-out" class="btn btn-copy">Copy</button>
+      <button type="button" class="btn btn-clear" data-clear-target="textarea[class*='io-']">Clear</button>
+   </div>
+
+   <!-- Output  -->
+   <textarea rows="5" id="io-out" class="io-out dark-d" placeholder="ﾃｷｽﾄｦ入力ｼﾃ下ｻｲ"></textarea>
+</div>
+
+<footer>
+   <p class="credit">Monad Lab &copy; 2019 All right reserved. </p>
+</footer>
+
+
+
+
+<!-- Ads -->
+<div class="ads dark-m">
+   <div class="ads-inner">
+   </div>
+   <div class="ads-strup"></div>
+</div>
+
+
+
+
+
+
+
+<script src="js/ini.js"></script>
+<script src="js/dic/hkhkDic_basic.js"></script>
+<script src="js/dic/hkhkDic_punc1.js"></script>
+<script src="js/dic/hkhkDic_punc2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
+
+
+
