@@ -163,13 +163,13 @@ clearBtn.on("click", function(e){
 });
 
 
-/*  ads toggle  */
+/*  ads toggle  *
 $$('.ads-strup')[0].on("click", function(e){
    e.preventDefault();
    
    this.parentElement.classList.toggle("clicked");
    this.classList.toggle("clicked");
-});
+});*/
 
 /*  copy btn  */ 
    /*** Clicpboard.js ***/
