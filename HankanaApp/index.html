@@ -1,30 +1,42 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
    <meta charset="UTF-8" />
-   <!--<meta name="viewport" content="width=340, initial-scale=1.7" />-->
+   <meta name="robots" content="noindex, nofollow" />
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Webアプリ 半角カナ変換</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <title>ハンカナ -半角カナへの変換アプリ-</title>
+   
+   <link name="shortcut icon" href="https://monadlab.site/hankanaApp/images/favicon.ico" />
+   <link rel="apple-touch-icon" href="https://monadlab.site/hankanaApp/images/touch-icon-hankana.png">
+<!--<link rel="apple-touch-startup-image" href="https://monadlab.site/icon-startup.png">-->
+   <meta name="apple-mobile-web-app-title" content="ﾊﾝｶﾅ">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   
+   <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
    <link rel="stylesheet" href="css/main.css" />
 </head>
-<body>
+
+<body class="page-index">
 
 
 <div class="container">
    <header>
       <div class="header-inner">
-         <div class="svg"></div>
-         <h1>半角カナ変換.App</h1>
+         <div class="logo"></div>
+         <h3>
+            ひらがな・カタカタが半角ｶﾅに変換できるWebアプリです<br />
+            ひら・カナ以外はそのまま再出力されます
+         </h3>
       </div>
    </header>
 
    <!-- Input  -->
-   <textarea rows="5" id="io-in" class="io-in" placeholder="テキストを入力して下さい"></textarea>
+   <textarea rows="5" id="io-in" class="io-in" placeholder="テキストを入力して下さい🌟"></textarea>
 
    <div class="arrow">
-      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
    </div>
 
    <!-- Buttons  -->
@@ -34,8 +46,10 @@
    </div>
 
    <!-- Output  -->
-   <textarea rows="5" id="io-out" class="io-out" placeholder="ﾃｷｽﾄｦ入力ｼﾃ下ｻｲ"></textarea>
+   <textarea rows="5" id="io-out" class="io-out" placeholder="ﾃｷｽﾄｦ入力ｼﾃ下ｻｲ🌟"></textarea>
 </div>
+
+
 
 <footer>
    <div class="credit">
@@ -47,16 +61,6 @@
 
 
 
-
-<!-- Ads 
-<div class="ads">
-   <div class="ads-inner">
-      <br /><br />
-   広告で稼ぐ(たい)予定✨✨₍₍(꒪່౪̮꒪່)⁾⁾w
-   </div>
-   <div class="ads-strup"></div>
-</div>
--->
 
 
 
