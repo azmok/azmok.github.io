@@ -80,6 +80,9 @@ textarea:disabled::placeholder{
 textarea:focus::placeholder{
    opacity: 0;
 }
+.btn:focus{
+	box-shadow: initial;
+}
 
 
 /* button */
@@ -122,47 +125,6 @@ border: 1px dotted red;*/
    width: 55px;
    height: 55px;
    background: transparent url("../src/arrow.png") center center/50px 50px no-repeat;
-}
-
-/* ads */
-.ads{
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   min-height: 120px;
-   z-index: 9999;
-   background: #eee;
-   border: 1px solid #ccc;/*
-   box-shadow: 0 25px 22px 0px rgba(10,10,10,0.1);*/
-   transition: all 1s ease;
-   transform: translateY(0%);
-   text-align: center;
-}
-.ads.clicked{
-   transform: translateY(-100%);
-   box-shadow: initial;
-}
-
-.ads-strup{
-   position: absolute;
-   top: 100%;
-   left: 70%;
-   width: 60px;
-   height: 30px;
-   z-index: 1;
-   border: inherit;
-   border-top: initial;
-   background: inherit;
-   border-radius: 0 0 30px 30px;
-   transform: translate(-50%, 0);
-   cursor: pointer;
-}
-.ads-strup::before{
-   content: "↑";
-}
-.ads-strup.clicked::before{
-   content: "↓";
 }
 
 footer{
