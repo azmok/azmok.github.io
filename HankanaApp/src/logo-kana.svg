@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="245" height="245" viewBox="0, 0, 245, 245">
+  <g id="Layer_1">
+    <g>
+      <path d="M5.935,-0 L239.065,-0 C242.343,-0 245,2.698 245,6.027 L245,238.973 C245,242.301 242.343,245 239.065,245 L5.935,245 C2.657,245 -0,242.301 -0,238.973 L-0,6.027 C-0,2.698 2.657,-0 5.935,-0 z" fill="#fff" />
+      <path d="M239.065,0 C242.343,-0 245,2.698 245,6.027 L245,238.973 C245,242.301 242.343,245 239.065,245 L5.935,245 C2.657,245 -0,242.301 -0,238.973 L0,6.027 C-0,2.698 2.657,-0 5.935,-0 L239.065,0 z M239.065,3 L5.935,3 C4.324,3 3,4.345 3,6.027 L3,238.973 C3,240.655 4.324,242 5.935,242 L239.065,242 C240.676,242 242,240.655 242,238.973 L242,6.027 C242,4.345 240.676,3 239.065,3 z" fill="#424039" />
+    </g>
+    <g>
+      <text transform="matrix(1, 0, 0, 1, 158.851, 62.947)" id="ﾝ">
+        <tspan x="-25.25" y="38.75" font-family="Noto Sans JP" font-size="100" kerning="0.5" fill="#32312D">ﾝ</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 88.851, 62.947)">
+        <tspan x="-25.5" y="38.75" font-family="Noto Sans JP" font-size="100" kerning="1" fill="#32312D">ﾊ</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 88.851, 170.947)" id="ｶ">
+        <tspan x="-25.25" y="38.75" font-family="Noto Sans JP" font-size="100" kerning="0.5" fill="#32312D">ｶ</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 158.851, 170.947)">
+        <tspan x="-25.5" y="38.75" font-family="Noto Sans JP" font-size="100" kerning="1" fill="#32312D">ﾅ</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
