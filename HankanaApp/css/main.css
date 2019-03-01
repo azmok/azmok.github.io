@@ -1,6 +1,8 @@
-body{/*
-   background: #faf8f2;*/
-}
+/*
+body:not(.page-index){
+   background: #fbfbfb;
+}*/
+
 .dark-l{
    background: #4A443F !important;
    color: #eee !important;
@@ -16,31 +18,30 @@ body{/*
 [class*="dark-"]:focus{
    background: #353331;
 }
-
+ul>li{/*
+   list-style: none;*/
+}
 
 header{
-   padding: 12rem 0 2rem;
+   padding: 6rem 0 2rem;
    color: #414141;
 }
-.header-inner{
-   position: relative;
+.header-inner{}
+.header-inner .logo{
+   margin: 0 auto 3rem auto;
+   width: 90px;
+   height: 90px;
+   background: transparent url("../src/logo-kana.png") left top/90px 90px no-repeat;
+   -webkit-user-select: none;
+   user-select: none;
+   pointer-events: none;
 }
-.header-inner .svg{
-   position: absolute;
-   top: 50%;
-   right: 0;
-   width: 120px;
-   height: 120px;
-   z-index: 1; 
-   font-size: 3rem;
-   transform: translate(-10em, -50%) rotate(-7deg);
-   background: transparent url("../src/logo-rabbit.svg") left top/100px 100px no-repeat;
-}
-.header-inner h1{
-   font: normal normal 700 3rem/1.2 "Noto Serif JP", "Yu Mincho", serif;
-   text-align: right;
-   padding-right: 3rem;
-   letter-spacing: 7px;
+.header-inner h3{
+   font: normal normal 400 0.75rem/1.85 "Noto Sans JP", "Yu Mincho", serif;
+   text-align: center;
+   letter-spacing: -0.7px;
+   color: #afaeab;
+   margin-bottom: 3rem;
 }
 
 .container{
@@ -48,14 +49,13 @@ header{
    margin: auto;
    max-width: 600px;
    padding: 4rem 0 10rem 0;
+   font: normal normal 400 17px/1.6 -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Yu Mincho", serif;
+}
+.center{
+   text-align: center;
 }
 
-footer{
-  text-align: center;
-  background: #333;
-  padding: 2rem 4rem;
-  color: #eee;
-}
+
 
 /* textarea */
 textarea{
@@ -91,34 +91,38 @@ border: 1px dotted red;*/
    width: 120px;
    transition: all 0.15s ease;
    display: inline-block;
-   border: 1px solid #ddd;
+   border: 1px solid #ccc;
    border-bottom: initial;
    border-radius: 5px 5px 0 0;
-   border-right: 3px solid #aaa;
-   border-left: 3px solid #aaa;
-   border-bottom: 5px solid #888;
+   border-right: 3px solid #ccc;
+   border-left: 3px solid #ccc;
+   border-bottom: 5px solid #aaa;
    transition: all 0.15s ease;
 }
 .btn-copy{
-   background: #b7e5bb;
+   background: #8F9EE3;
+   color: #fff;
+   border: 1px solid #768AE3;
+   border-radius: 5px 5px 0 0;
+   border-right: 3px solid #768AE3;
+   border-left: 3px solid #768AE3;
+   border-bottom: 5px solid #6779C7;
 }
 .btn-clear{
    background: #fff;
+   color: #aaa
 }
 .btn.clicked{/*
    box-shadow: 0 0 7px 3px rgba(0,0,0,0.3) inset;*/
    border: 1px solid #aaa;
-   
 }
 /* arrow */
 .arrow{
-   text-align: center;
-   font-size: 2.5rem;
-   margin: 0.5rem;
-   color: #f7a3cb;
-   transform: translateY(0px);
+   margin: 0.5rem auto;
+   width: 55px;
+   height: 55px;
+   background: transparent url("../src/arrow.png") center center/50px 50px no-repeat;
 }
-
 
 /* ads */
 .ads{
@@ -160,3 +164,62 @@ border: 1px dotted red;*/
 .ads-strup.clicked::before{
    content: "↓";
 }
+
+footer{
+  text-align: center;
+  background: #333;
+  padding: 2rem 4rem;
+  color: #eee;
+}
+footer a{
+   color: #FFDDA6;
+}
+footer .nav{
+   margin-bottom: 2rem;
+}
+footer .nav ul{
+   margin: auto;
+   padding: 0;
+   grid-gap: 1rem 2rem;
+   list-style: none;
+   display: grid;
+   grid-template-columns: auto auto auto;
+}
+footer .nav ul>li{
+   text-align: center;
+}
+footer .nav ul>li>a:hover{
+   text-decoration: none;
+   color: #fff;
+   opacity: 0.7;
+}
+
+
+
+
+/* about */
+
+
+/* privacy Policy */
+.container>h1:first-child{
+   border-bottom: 1px solid #ccc;
+   padding-bottom: 0.25rem;
+   margin-bottom: 3.25rem;
+}
+ol>li{
+   text-align: left;
+   font-size: 1.5rem;
+}
+ol>li>span.title{
+   font-weight: 700;
+}
+ol>li>p{
+   font-size: 1rem;
+}
+ol>li{
+   margin-top: 0.75rem;
+}
+
+
+/* termsOfsercice */
+
