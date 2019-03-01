@@ -37,7 +37,7 @@ header{
    pointer-events: none;
 }
 .header-inner h3{
-   font: normal normal 400 0.75rem/1.85 "Noto Sans JP", "Yu Mincho", serif;
+   font: normal normal 400 0.75rem/1.85 "Noto Sans JP", "Yu Gothic", serif;
    text-align: center;
    letter-spacing: -0.7px;
    color: #afaeab;
@@ -49,7 +49,7 @@ header{
    margin: auto;
    max-width: 600px;
    padding: 4rem 0 10rem 0;
-   font: normal normal 400 17px/1.6 -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Yu Mincho", serif;
+   font: normal normal 400 17px/1.6 -apple-system, BlinkMacSystemFont, "Noto Sans JP", "Yu Gothic", serif;
 }
 .center{
    text-align: center;
