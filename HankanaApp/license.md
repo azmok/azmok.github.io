@@ -1,7 +1,7 @@
 # HankanaApp MIT Licence
 
 The MIT License (MIT)
-Copyright © 2019 Azuma Okumura <mailto:azumaO@gmail.com>
+Copyright © 2019 Azuma Okumura <mailto:mail.to.azumao@gmail.com>
 
 Hankana.App was made with ❤︎ by Azuma Okumura under MIT Licence () that follows
 clipborad.js's MIT licence.
