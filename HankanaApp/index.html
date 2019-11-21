@@ -1,25 +1,40 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html lang="en">
 <head>
    <meta charset="UTF-8" />
-   <meta name="robots" content="noindex, nofollow" />
-   
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--<meta name="viewport" content="width=340, initial-scale=1.7" />-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>ﾊﾝｶﾅ -半角カナへの変換アプリ-</title>
+   <title>ハンカナ -半角カナへの変換アプリ-</title>
+   <meta name="keyword" content="半角, 半角カナ, カナ, 変換, 半角カナ変換"/>
+   <meta description ="ひらがな・カタカタが半角ｶﾅに変換できるWebアプリです。
+            ひら・カナ以外はそのまま再出力されます" />
+   <meta name="robots" content="index, follow">
    
-   <link name="shortcut icon" href="https://monadlab.site/hankanaApp/images/favicon.ico" />
-   <link rel="apple-touch-icon" href="https://monadlab.site/hankanaApp/images/touch-icon-hankana.png">
-<!--<link rel="apple-touch-startup-image" href="https://monadlab.site/icon-startup.png">-->
+   <!-- favicon -->
+   <link rel="icon" href="src/logo-kana.svg" size="any" type="image/svg+xml" />
+   
+   
+   <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="256x256" href="/icons/apple-icon-256x256.png">
+   
+   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+   <link rel="manifest" href="manifest.json">
+   
+   <!-- ios startup icon:: '/' in href start may be 'must' -->
+   <link rel="apple-touch-startup-image" href="/apple-icon-152x152.png">
+   <!-- iso statrup title -->
    <meta name="apple-mobile-web-app-title" content="ﾊﾝｶﾅ">
-   <meta name="apple-mobile-web-app-capable" content="yes">
-   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   
+   <!-- /favicon -->
+
    
    <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
-   <link rel="stylesheet" href="css/main.css" />
    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css" />
 </head>
-
 <body class="page-index">
 
 
@@ -50,9 +65,37 @@
    <textarea rows="5" id="io-out" class="io-out" placeholder="ﾃｷｽﾄｦ入力ｼﾃ下ｻｲ🌟"></textarea>
 </div>
 
-
-
 <footer>
+   <div class="nav">
+      <ul>
+         <li>
+            <a href="pages/about.html">
+               About
+            </a>
+         </li>
+         <li>
+            <a href="pages/privacyPolicy.html">
+               プライバシーポリシー
+            </a>
+         </li>
+         <li>
+            <a href="pages/termsOfService.html">
+               免責事項
+            </a>
+         </li>
+         <li>
+            <a href="pages/license.html">
+               ライセンス
+            </a>
+         </li>
+         <li>
+            <a href="https://github.com/KazumaTojo/hankana">
+               ソースコード
+            </a>
+         </li>
+      </ul>
+   </div>
+   
    <div class="credit">
       HankanaApp is under MIT Licence.
       <a href=""></a>
@@ -61,6 +104,15 @@
 </footer>
 
 
+
+
+<!-- Ads -->
+<div class="ads">
+   <div class="ads-inner">
+
+   </div>
+   <div class="ads-strup"></div>
+</div>
 
 
 
