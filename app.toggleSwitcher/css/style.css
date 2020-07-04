@@ -80,3 +80,16 @@ input[type='checkbox']:checked + .wrapper .button{
    transform: translate(0%, -50%);
 }
 
+.toPage2{
+   position: absolute;
+   left: 50%;
+   top: 40%;
+   transform: translate(-50%, -50%);
+   
+   display: inline-block;
+   
+   font-size: 1rem;
+   padding: 1.5rem 0 0 0;
+   border-bottom: 1px solid darkblue;
+
+}
