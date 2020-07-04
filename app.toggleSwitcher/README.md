@@ -6,3 +6,4 @@ I carefully implement those according to below points.
 - generatable by js
 
 I thought those togglable button, originally inspired by Proto.io, try to implement by js. By implementing js and buttons become generatable by js at any times, HTML becomes very clean.
+[demo](https://azmok.github.io/app.toggleSwitcher/)
