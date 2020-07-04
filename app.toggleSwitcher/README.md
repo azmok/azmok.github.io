@@ -1,6 +1,6 @@
 Togglable button implemented by JavaScript.
 
-I carefully implement tbose according below.
+I carefully implement those according to below points.
 
 - UI(css transition speed, comfortability)
 - generatable by js
