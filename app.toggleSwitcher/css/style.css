@@ -1,0 +1,82 @@
+body *{
+   font: normal normal 400 16px/1.6 Courier, sans-serif;
+   box-sizing: border-box;
+}
+.box{
+   display: table;
+   margin: 25px auto;
+}
+input[type='checkbox']{
+   display: none;
+}
+
+.wrapper, .label, .button{
+   display: block;
+}
+.wrapper{
+   position: relative;
+   user-select: none;
+   cursor: pointer;
+}
+.label, .button{
+   position: absolute;
+   transition: all 0.28s ease;
+}
+
+.wrapper{
+   width: 120px;
+   height: 40px;
+   border: 2px solid #aaa;
+   border-radius: 20px;
+   overflow: hidden;
+}
+.label{
+   top: 0;
+   left: 0;
+   z-index: 1;
+   
+   width: 200%;
+   height: 100%;
+   background: #ddd;
+}
+.label-off, .label-on{
+   display: block;
+   position: absolute;
+   top: 0;
+   width: 50%;
+   height: 100%;
+   font: normal normal 700 18px/2 Monospace;
+   letter-spacing: 0px;
+}
+.label-off{
+   left: 0;
+   color: #aaa;
+   background: #eee
+}
+.label-on{
+   left: 50%;
+   color: #fff;
+   background: #ffcab5;
+   text-align: right;
+}
+
+.button{
+   top: 50%;
+   left: 90%;
+   transform: translate(-100%, -50%);
+   z-index: 2;
+   
+   width: 32px;
+   height: 32px;
+   border: 2px solid #aaa;
+   border-radius: 50%;
+   background: #fff;
+}
+input[type='checkbox']:checked + .wrapper .label{
+   left: -100%;
+}
+input[type='checkbox']:checked + .wrapper .button{
+   left: 10%;
+   transform: translate(0%, -50%);
+}
+

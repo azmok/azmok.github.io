@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>Document</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="ini.css" />
+
+<style>
+body *{
+   font: normal normal 400 16px/1.6 Courier, san-serif;
+   box-sizing: border-box;
+}
+.container{
+   display: table;
+   margin: 30px auto;
+}
+input[type='checkbox']{
+   display: none;
+}
+
+.wrapper, .label, .button{
+   display: block;
+}
+.wrapper{
+   position: relative;
+}
+.label, .button{
+   position: absolute;
+   transition: all 0.28s ease;
+}
+
+.wrapper{
+   width: 120px;
+   height: 40px;
+   border: 2px solid #aaa;
+   border-radius: 20px;
+   overflow: hidden;
+   
+   margin-top: 20px;
+}
+.label{
+   top: 0;
+   left: 0;
+   z-index: 1;
+   
+   width: 200%;
+   height: 100%;
+   background: #ddd;
+}
+.label::before, .label::after{
+   display: block;
+   position: absolute;
+   top: 0;
+   width: 50%;
+   height: 100%;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 2;
+}
+.label::before{
+   content: "\2003" "Off";
+   left: 0;
+   color: #aaa;
+   background: #eee
+}
+.label::after{
+   content: "On" "\2003";
+   left: 50%;
+   color: #fff;
+   background: #ffcab5;
+   text-align: right;
+}
+
+.button{
+   top: 50%;
+   left: 90%;
+   transform: translate(-100%, -50%);
+   z-index: 2;
+   
+   width: 35px;
+   height: 35px;
+   border: 2px solid #aaa;
+   border-radius: 50%;
+   background: #fff;
+}
+input[type='checkbox']:checked + .wrapper .label{
+   left: -100%;
+}
+input[type='checkbox']:checked + .wrapper .button{
+   left: 10%;
+   transform: translate(0%, -50%);
+}
+
+
+</style>
+</head> 
+<body>
+
+<div class="container">
+      
+   <input type="checkbox" id="switcher"></input>
+   <label class="wrapper" for="switcher">
+      <span class="label"></span>
+      <span class="button"></span>
+   </label>
+   <input type="checkbox" id="switcher2"></input>
+   <label class="wrapper" for="switcher2">
+      <span class="label"></span>
+      <span class="button"></span>
+   </label>
+   <input type="checkbox" id="switcher3"></input>
+   <label class="wrapper" for="switcher3">
+      <span class="label"></span>
+      <span class="button"></span>
+   </label>
+   <input type="checkbox" id="switcher4"></input>
+   <label class="wrapper" for="switcher4">
+      <span class="label"></span>
+      <span class="button"></span>
+   </label>
+
+</div>
+
+
+</body>
+</html>
