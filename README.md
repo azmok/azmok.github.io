@@ -3,4 +3,4 @@
 - [VisualizeHTML.js](https://azmok.github.io/visualizeHTML/)
 - [CSS Cube -目次-](https://azmok.github.io/CSS%20Cube/toc/)
 - [半角カナ変換App](https://azmok.github.io/HankanaApp/)
-- on/offスイッチ](https://azmok.github.io/app.toggleSwitcher/)
+- [on/offスイッチ](https://azmok.github.io/app.toggleSwitcher/)
