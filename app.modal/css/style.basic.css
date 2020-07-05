@@ -1,0 +1,106 @@
+/*****************
+   構造・機能
+ ****************/
+/* モーダル 背景*/
+.modal-bg{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0,0,0,0.4);
+   z-index: 0;
+   
+   opacity: 0;
+   visibility: hidden;
+   
+   transition: all 0.35s;
+}
+.modal-bg.on{
+   opacity: 1;
+   visibility: visible;
+}
+
+/* モーダル用コンテナ */
+.modal{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   width: 420px;
+   height: 200px;
+   z-index: 9999;
+   border-radius: 8px;
+   box-shadow: 0 20px  20px rgba(0,0,0,0.2);
+   cursor: pointer;
+   font: normal normal 400 1.4125rem/1.2 -apple-system, sans-serif;
+   padding: 1rem;
+   background: #fff;
+   color: #000;
+   
+   /* モーダル自体をX軸センター寄せ */
+   transform: scale(1.1, 1.1) translate(-50%, 0%);
+   transform-origin: 0% 50%;
+   
+   /* 文字を含む要素をX軸・Y軸センター寄せするため、
+      親要素`.modal`に `display: flex`を使用 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+}
+/* モーダル 可視化・接触化 */
+.modal.on{
+   transform: scale(1, 1) translate(-50%, 0%);
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* モーダル内 テキスト要素*/
+.msg{
+   line-height: 1.4;
+   display: table;
+   padding-bottom: 0.5em;
+}
+
+
+/*****************
+   装飾
+ ****************/
+.safe,
+.warn,
+.danger{
+   color: #fff;
+}
+/* 安全 */
+.safe{
+   background: green;
+}
+/* 注意 */
+.warn{
+   background: #FFC100;
+   color: #000;
+}
+/* 警告 */
+.danger{
+   background: crimson;
+}
+
+/* ok button */
+.modal button{
+   position: absolute;
+   bottom: 1rem;
+   left: 50%;
+   transform: translateX(-50%);
+   
+   background: #fff;
+   color: #000;
+   width: 100px;
+   padding: 1rem 0;
+   border: 1px solid #ccc;
+   border-radius: 7px;
+   font-size: 0.5em;
+}

@@ -1,0 +1,85 @@
+/*****************
+   構造・機能
+ ****************/
+/* モーダル用コンテナ */
+.modal{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   width: 420px;
+   height: 200px;
+   border-radius: 8px;
+   box-shadow: 0 20px  20px rgba(0,0,0,0.2);
+   
+   transform: translate(-50%, 0%); /* モーダル自体をX軸センター寄せ
+   
+   /* 文字を含む要素をX軸・Y軸センター寄せするため、
+      親要素`.modal`に `display: flex`を使用 */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* 非可視化・非接触化 */
+   visibility: hidden;
+   opacity: 0;
+}
+/* モーダル内 テキスト要素*/
+.msg{
+   display: table;
+}
+
+/* モーダル 可視化・接触化 */
+.modal.on{
+   visibility: visible;
+   opacity: 1;
+   transform: translate(-50%, 0%);
+}
+
+/* モーダル消去時(クリック時)のアニメーション */
+.disappear{
+   animation: remove 1s ease 0s 1 normal forwards;
+}
+@keyframes remove{
+   0% {
+      transform: translate(-50%, 0%) scale(1, 1);
+      opacity: 1;
+   }
+   100% {
+      transform: translate(-50%, 0%) scale(1.1, 1.1);
+      opacity: 0;
+   }
+}
+
+/*****************
+   装飾
+ ****************/
+.safe,
+.warn,
+.danger{
+   color: #fff;
+}
+/* 安全 */
+.safe{
+   background: green;
+}
+/* 注意 */
+.warn{
+   background: orange;
+}
+/* 警告 */
+.danger{
+   background: crimson;
+}
+
+/*****************
+   ボタン: モーダルを初期状態にリセット
+ ****************/
+#resetBtn{
+   position: fixed;
+   bottom: 8rem;
+   left : 1rem;
+   padding: 1rem;
+   
+   background: orange;
+   color: #fff;
+}

@@ -1,0 +1,1 @@
+webkit-like modal implementation by JavaScript.
