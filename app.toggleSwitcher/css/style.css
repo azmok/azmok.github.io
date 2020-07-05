@@ -94,7 +94,7 @@ input[type='checkbox']:checked + .wrapper .button{
 
 
 /*** back to home ***/
-.backToHome{
+a.backToHome{
    display: block;
    position: absolute;
    bottom: 5rem;
