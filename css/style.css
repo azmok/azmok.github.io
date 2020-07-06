@@ -1,9 +1,13 @@
+html{
+   background: rgba(17,0,0,1);
+}
 body{
    font: normal normal 300 1rem/1.4 "Inconsolata", sans-serif;
    background: rgb(64,62,53);
    background: radial-gradient(circle, rgba(64,62,53,1) 0%, rgba(17,0,0,1) 100%);
    color: #fff;
    height: 100vh;
+   border: 11px solid #dbe0bb;
 }
 ul{
    display: table;
