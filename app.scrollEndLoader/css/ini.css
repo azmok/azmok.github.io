@@ -1,11 +1,22 @@
+:root{
+   --font-mono: "Roboto Mono", monospace;
+   --font-nSansJp: "Noto Snas JP", sans-serif;
+   --font-nSerifJp: "Noto Serif JP", sans-serif;
+   --color-link: #284f96;
+   --bg-dark: #333;
+}
+
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 body{
-   font: 400 1rem/1.6 serif;
-   }
+   font: 400 1rem/1.4 serif;
+   color: #311;
+   background: #cff;
+}
+
 body > .container{
    padding: 3rem;
 }
@@ -23,26 +34,4 @@ p:first-child{
 }
 strike{
    color: #bbb;
-}
-.print{
-   color: crimson;
-   padding: 1em;
-   background: #eee;
-   border: 1px solid #ddd;
-   }
-
-/***********
-   Fonts
- **********/
-.notoSerifJp{
-   font-family: "Noto Serif JP";
-}
-.notoSansJp{
-   font-family: "Noto Sans JP";
-}
-.yumin{
-   font-family: "YuMincho", "Yu Micho";
-}
-.hiramin{
-   font-family: "Hiragino Mincho ProN";
 }

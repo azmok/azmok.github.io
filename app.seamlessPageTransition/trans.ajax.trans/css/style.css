@@ -1,9 +1,18 @@
 html{
 	background: #333;
 }
-a{
-	color: yellow;
+h1{
+   font-family: var(--font-mono);
+   display: table;
+   margin: 3rem auto;
+   color: #373737;
 }
+button{
+   display: table;
+   margin: 0 auto;
+}
+
+
 
 .page1{
 	border: 11px solid #eee;
