@@ -1,0 +1,48 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font: 400 1rem/1.6 serif;
+   }
+body > .container{
+   padding: 3rem;
+}
+a{
+   color: inherit;
+   opacity: 0.7;
+   text-decoration: none;
+   font: italic normal 400 0.875rem/1.6 serif;
+}
+p{
+   margin-top: 0.6125em;
+}
+p:first-child{
+   margin-top: 0;
+}
+strike{
+   color: #bbb;
+}
+.print{
+   color: crimson;
+   padding: 1em;
+   background: #eee;
+   border: 1px solid #ddd;
+   }
+
+/***********
+   Fonts
+ **********/
+.notoSerifJp{
+   font-family: "Noto Serif JP";
+}
+.notoSansJp{
+   font-family: "Noto Sans JP";
+}
+.yumin{
+   font-family: "YuMincho", "Yu Micho";
+}
+.hiramin{
+   font-family: "Hiragino Mincho ProN";
+}

@@ -1,0 +1,105 @@
+:root{
+   --bg-heading: #333083;
+   --bg-spacer: #d48891;
+   --color-heading: #f2eedb;
+   --color-spacer: #f2eedb;
+   --color-bodyBorder: #fff;
+   
+}
+
+
+body{
+   position: relative;
+   border: 8px solid var(--color-bodyBorder);
+}
+body::after{
+   content: '↓ scroll end ↓';
+   text-align: center;
+   color: #fff;
+   font: normal normal 300 2rem/2.5rem "Roboto Mono", monospace;
+   
+   display: block;
+   position: absolute;
+   bottom: 0;
+   left: -8px;
+   width: calc(100% + 16px);
+   height: 2.5rem;
+   background: #d34865;
+   opacity: 0.37;
+}
+h1{
+   text-align: left;
+   padding: 3.5em 2em 5em 2em;
+   font: normal normal 300 50px/1.3 "Roboto Mono", monospace;
+   letter-spacing: 1px;
+   color: var(--color-heading);
+   background: var(--bg-heading);
+}
+#spacer{
+   display: flex;
+   height: 100vh;
+   background: var(--bg-spacer);
+   justify-content: center;
+   align-items: center;
+}
+#spacer p{
+   color: var(--color-spacer);
+   font: italic normal 300 36px/1.4 "Roboto Mono", monospace;
+}
+#garally-container{
+}
+img{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+
+#nowloading{
+   position: fixed;
+   bottom: 5rem;
+   right: 3rem;
+   width: 20px;
+   height: 102px;
+   z-index: 99;
+   font: 300 60px/100px "Roboto Mono", monospace;
+   color: #fff;
+   text-align: center;
+   text-shadow: 0 3px 5px #555;
+}
+
+#nowloading #completedText{
+   opacity: 0;
+   
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: table;
+   transform: translate(20px, -100%);
+   font-size: 20px;
+   line-height: 1;
+   letter-spacing: 0px;
+}
+#nowloading #completedText.completed{
+   opacity: 1;
+}
+
+#nowloading #bar{
+   box-sizing: content-box;
+   position: relative;
+   opacity: 0;
+   height: 100px;
+   
+border: 1px solid #333;
+
+}
+#nowloading #bar.visible{
+   opacity: 1;
+}
+#nowloading #bar #bar-inner{
+   background: linear-gradient(orange, indigo, deepskyblue);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+}

@@ -1,0 +1,53 @@
+html{
+	background: #333;
+}
+a{
+	color: yellow;
+}
+
+.page1{
+	border: 11px solid #eee;
+	height: 100vh;
+	background: rgba(191,168,143,1);
+	
+	margin: 6rem 0 0 0;
+	animation: BgTextTransform 0.85s ease 0s 1 normal forwards running;
+   
+   transform: translateY(0px);
+}
+.page2{
+	border: 11px solid #dfd85b;
+	height: 100vh;
+	background: rgba(90,88,145,1);
+	
+	margin: 8rem 0 0 0;
+	animation: BgTextTransform 0.85s ease 0s 1 normal forwards running;
+   
+   transform: translateY(0px);
+}
+
+@keyframes BgTextTransform{
+	0% {
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(-40px);
+		opacity: 1;
+	}
+}
+
+[class*="page"].disappeare{
+	opacity: 0;
+   animation: disappeare 0.85s ease 0s 1 normal forwards running;
+}
+@keyframes disappeare{
+   0%{
+      transform: translateY(-40px);
+		opacity: 1;
+   }
+   100%{
+      transform: translateY(0px);
+		opacity: 0;
+   }
+}

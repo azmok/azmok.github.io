@@ -1,0 +1,60 @@
+html{
+	background: #333;
+}
+a{
+	color: yellow;
+}
+
+.page1{
+	border: 11px solid #eee;
+	height: 100vh;
+	background: rgba(191,168,143,0);
+	
+	margin: 6rem 0 0 0;
+	position: relative;
+	animation: BgTextTransform 0.85s ease 0s 1 normal forwards running;
+}
+
+
+@keyframes BgTextTransform{
+	0% {
+		top: 0px;
+		color: #333;
+		background: rgba(191,168,143,0);
+	}
+	100%{
+		top: -40px;
+		color: #fff;
+		background: rgba(191,168,143,1);
+	}
+}
+
+.disappeare{
+	transition: all 0.85s ease;
+	opacity: 0;
+}
+
+
+.page2{
+	border: 11px solid #dfd85b;
+	height: 100vh;
+	background: rgba(90,88,145,0);
+	
+	margin: 8rem 0 0 0;
+	position: relative;
+	animation: BgTextTransform2 0.85s ease 0s 1 normal forwards running;
+}
+
+
+@keyframes BgTextTransform2{
+	0% {
+		top: 0px;
+		color: #333;
+		background: rgba(90,88,145,0);
+	}
+	100%{
+		top: -40px;
+		color: #fff;
+		background: rgba(90,88,145,1);
+	}
+}
