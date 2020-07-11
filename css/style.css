@@ -55,7 +55,6 @@ ul, h2{
 }
 
 
-
 .container{
    padding-left: 10rem;/*
 border: 1px dotted red;/**/
@@ -92,5 +91,13 @@ img.logo-github{
    height: auto;
    margin: 0.25rem auto;
 }
-@media(max-width: 414px){
+
+
+@media (max-width: 414px){
+   body{
+      padding: 0rem;
+   }
+   ul, h2{
+      margin-left: 0rem;
+   }
 }
