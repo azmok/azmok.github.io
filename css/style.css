@@ -28,8 +28,7 @@ h1{
    width: 70%;
    margin-top: 1.25rem;
    font-family: "Roboto Mono";
-   font-weight: 300;/*
-   letter-spacing: 0px;/**/
+   font-weight: 300;
 }
 h1::first-letter{
    color: #f7cb6e;
@@ -53,14 +52,11 @@ ul, h2{
    margin-left: 1.7rem;
 }
 
-
 .container{
-   padding-left: 10rem;/*
-border: 1px dotted red;/**/
+   padding-left: 6.25rem;
 }
 
-div.logo{/*
-border: 1px solid red;/**/
+div.logo{
    position: absolute;
    display: table;
    top: 6.5rem;
