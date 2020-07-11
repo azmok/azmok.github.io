@@ -1,0 +1,37 @@
+:root{
+  --font-nSansJp: "NotonSans JP";
+  --font-nSerifJp: "Noto Serif JP";
+  --font-mono: "Roboto Mono";
+  --font-def: normal normal 300 1rem/1.4 var(--font-nSansJp);
+  
+  --bg-pink: #F2DFDC;
+  --bg-cyan: #D9E8DE;
+  --bg-skyblue: #B6D2E0;
+  --color-black: #333;
+  --color-gray: #eee;
+  --color-cream: #fdf5ea;
+  --color-purple: #e6d3de;
+  --color-baige: #f2e9de;
+}
+
+body{
+   font: var(--font-def);
+}
+body > .container{
+   padding: 3rem;
+}
+a{
+   color: var(--bg-skyblue);
+   text-decoration: none;
+   border-bottom: 1px solid var(--bg-skyblue);
+}
+p{
+   margin-top: 0.6125em;
+}
+p:first-child{
+   margin-top: 0;
+}
+
+strike{
+   color: #bbb;
+}
