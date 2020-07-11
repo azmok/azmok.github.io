@@ -10,16 +10,19 @@ h1{
 a{
    display: table;
    margin: 0 auto;
-   color: #fff;
-   font-family: var(--font-mono);
+   background: var(--bg-baige);
+   padding: 1rem;
+   box-shadow: 0 7px 12px 3px rgba(9,14,11,0.2);
+   transition: all 1s ease;
 }
-
-
+a:hover{
+   box-shadow: 0 0 0 0 rgba(9,14,11,0);
+}
 
 .page1{
 	border: 11px solid #eee;
 	height: 100vh;
-	background: rgba(191,168,143,1);
+	background: var(--bg-purple);
 	
 	margin: 6rem 0 0 0;
 	animation: BgTextTransform 0.85s ease 0s 1 normal forwards running;
@@ -27,9 +30,9 @@ a{
    transform: translateY(0px);
 }
 .page2{
-	border: 11px solid #dfd85b;
+	border: 11px solid #eee;
 	height: 100vh;
-	background: rgba(90,88,145,1);
+	background: var(--bg-skyblue);
 	
 	margin: 8rem 0 0 0;
 	animation: BgTextTransform 0.85s ease 0s 1 normal forwards running;
