@@ -71,7 +71,7 @@ addEvents = () => {
    });
 };
 window.onpopstate = (e)=>{
-         _( "onpopstate")
-         location.href = location.href
-      }
+   _( "onpopstate")
+   location.href = location.href
+}
 addEvents();
