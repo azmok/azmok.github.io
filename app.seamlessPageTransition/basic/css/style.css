@@ -51,11 +51,11 @@ a:hover{
 	}
 }
 
-[class*="page"].disappeare{
+[class*="page"].disappear{
 	opacity: 0;
    animation: disappeare 0.85s ease 0s 1 normal forwards running;
 }
-@keyframes disappeare{
+@keyframes disappear{
    0%{
       transform: translateY(-40px);
 		opacity: 1;
