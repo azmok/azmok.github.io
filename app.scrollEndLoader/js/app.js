@@ -130,10 +130,10 @@
       if ( bodyBtm <= windowBtm  &&  allLoaded ){
          const curUrl = location.href, 
          parentPath = curUrl.substring( 0, curUrl.lastIndexOf("/") ),
-         //ACCESS_KEY = "YOUR_ACCESS_KEY_ON_UNSPLASH.COM",
+         ACCESS_KEY = "YOUR_ACCESS_KEY_ON_UNSPLASH.COM",
          // replace ↑those with your access_key of dev app on unsplash.com
         
-         //targetUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}&count=5`;
+         targetUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}&count=5`;
          targetUrl = `${parentPath}/img/bg${counter++}.jpg`;
          //_( curUrl )
          //_( targetUrl )
