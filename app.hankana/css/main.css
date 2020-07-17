@@ -183,5 +183,23 @@ ol>li{
 }
 
 
-/* termsOfsercice */
+#out-wrapper{
+   position: relative;
+}
+#msg-board{
+   display: table;
+   position: absolute;
+   bottom: 100%;
+   right: 0%;
+   
+   background: pink;
+   color: #fff;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.3s;
+}
+#msg-board.visible{
+   visibility: visible;
+   opacity: 1;
+}
 

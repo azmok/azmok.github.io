@@ -1,4 +1,4 @@
-const hkhkDic_basic = [
+export const hkhkDic_basic = [
    ["hira", "kana", "hKana"],
    ["3041", "30a1", "ff67"],
    ["3042", "30a2", "ff71"],
