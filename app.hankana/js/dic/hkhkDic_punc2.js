@@ -1,4 +1,4 @@
-const hkhkDic_punc2 = [
+export const hkhkDic_punc2 = [
    ["fullWitdh", "ascii(halhWidth)"],
    ["ff01", "0021"],
    ["ff02", "0022"],

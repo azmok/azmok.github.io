@@ -1,4 +1,4 @@
-const hkhkDic_punc1 = [
+export const hkhkDic_punc1 = [
    ["hira", "kana", "hkana"],
    ["3002", "ff61", "ff61"],
    ["300c", "ff62", "ff62"],

@@ -392,6 +392,10 @@
    };
    
    W.create = (tagName, ...rest) => {
+      // @param
+      //   | tagName
+      //   | text
+      //   | parentElement
       let nl = doc.createElement(tagName),
       txt = "",
       parent = null;
