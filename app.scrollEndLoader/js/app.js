@@ -26,6 +26,7 @@
    
    let timerId = 0,
    imgArr = [],
+	counter = 0,
    allLoaded = true;
    
    const bar = $$('#bar'),
@@ -87,23 +88,20 @@
       let xhr = new XMLHttpRequest();
       
       xhr.addEventListener("readystatechange", (e)=>{
+         //_( xhr.readyState, xhr.status )
          if( xhr.readyState === 4  &&  xhr.status === 200 ){
             
-            const res = xhr.response,
-            json = JSON.parse( res );
             
-            json.forEach((obj, i) => {
-               //const src = obj.urls.raw,
-               const src = obj.urls.regular,
-               img = new Image();
-               
-               // set src attribute 
-               img.load(src);
-               img.src = src;
-               imgArr[i] = img;
-               
-               garally.appendChild(img);
-            });
+            const src = xhr.responseURL,
+            img = new Image();
+            
+            // set src attribute 
+            img.load(src);
+            img.src = src;
+            imgArr.push(img);
+            
+            garally.appendChild(img);
+            
             
             // loading progress calcu of one 
             timerId = setInterval( () => {
@@ -113,6 +111,7 @@
          
       });
       
+      xhr.responseType = "text";
       xhr.open("GET", url, true);
       xhr.send();
    };
@@ -131,11 +130,13 @@
       if ( bodyBtm <= windowBtm  &&  allLoaded ){
          const curUrl = location.href, 
          parentPath = curUrl.substring( 0, curUrl.lastIndexOf("/") ),
-         ACCESS_KEY = "YOUR_ACCESS_KEY_ON_UNSPLASH.COM",
+         //ACCESS_KEY = "YOUR_ACCESS_KEY_ON_UNSPLASH.COM",
          // replace ↑those with your access_key of dev app on unsplash.com
-         
-         targetUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}&count=5`;
-         
+        
+         //targetUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}&count=5`;
+         targetUrl = `${parentPath}/img/bg${counter++}.jpg`;
+         //_( curUrl )
+         //_( targetUrl )
          allLoaded = false;
          fetchImage( targetUrl );
       }
