@@ -103,3 +103,29 @@ border: 1px solid #333;
    left: 0;
    width: 100%;
 }
+
+
+
+.img-wrapper{
+   position: relative;
+   border-top: 11px solid #fafafa;
+}
+.attribution-card{
+   position: absolute;
+   bottom: 1.25rem;
+   right: 0rem;
+   opacity: 0.7;
+   
+   display: table;
+   padding: 1.25em 1.0em 1.25em 1.25em;
+   border-radius: 9px 0 0 9px;
+   border: 1px solid #ccc;
+   box-shadow: 0px 7px 9px 2px rgba(11,11,11,0.3);
+   font: 400 0.875rem/1.4 monospace;
+   background: #fff;
+}
+.attribution-card a{
+   color: #493aba;
+   text-decoration: underline;
+   font: 400 0.875rem/1.4 monospace;
+}

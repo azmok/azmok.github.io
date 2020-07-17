@@ -83,6 +83,35 @@
          allLoaded = true;
       }
    },
+   createImageElement = (obj, i) => {
+      const src = obj.urls.regular,
+      appName = "myTestApp",
+      cardHTML  = `Photo by <a href="https://unsplash.com/@${ obj.user.username }?utm_source=${ appName }&utm_medium=referral">${ obj.user.name }</a> on <a href="https://unsplash.com/?utm_source=${ appName }&utm_medium=referral">Unsplash</a>`,
+      cardElm = create("DIV", cardHTML)
+         .attr({
+            "class": "attribution-card"
+         }),
+      wrapper = create("DIV", "")
+         .attr({
+            "class": "img-wrapper"
+         }),
+      img = new Image();
+      
+      // scale loading completion
+      img.load(src);
+      
+      // set src attribute 
+      img.src = src;
+      imgArr[i] = img;
+      
+      // DOM 
+      wrapper.appendChild(img);
+      wrapper.appendChild(cardElm);
+      garally.appendChild(wrapper);
+               
+               
+               
+   },
    fetchImage = function(url){
       let xhr = new XMLHttpRequest();
       
@@ -93,16 +122,12 @@
             json = JSON.parse( res );
             
             json.forEach((obj, i) => {
-               //const src = obj.urls.raw,
-               const src = obj.urls.regular,
-               img = new Image();
                
-               // set src attribute 
-               img.load(src);
-               img.src = src;
-               imgArr[i] = img;
+               /////   create IMG element and Unsplash Atteibution Card
+               createImageElement(obj, i);
                
-               garally.appendChild(img);
+               /////////////////   END   ///////////////////////////////
+               
             });
             
             // loading progress calcu of one 
@@ -131,7 +156,7 @@
       if ( bodyBtm <= windowBtm  &&  allLoaded ){
          const curUrl = location.href, 
          parentPath = curUrl.substring( 0, curUrl.lastIndexOf("/") ),
-         ACCESS_KEY = "YOUR_ACCESS_KEY_ON_UNSPLASH.COM",
+         ACCESS_KEY = "0ab7cceda744fc1d6d13d1a9466e2db03d7c99e4393e1907327df50d08038894",
          // replace ↑those with your access_key of dev app on unsplash.com
          
          targetUrl = `https://api.unsplash.com/photos/random/?client_id=${ACCESS_KEY}&count=5`;
