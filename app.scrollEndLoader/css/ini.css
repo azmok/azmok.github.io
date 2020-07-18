@@ -21,10 +21,12 @@ body > .container{
    padding: 3rem;
 }
 a{
+   display: inline-block;
    color: inherit;
    opacity: 0.7;
    text-decoration: none;
    font: italic normal 400 0.875rem/1.6 serif;
+   padding: 0 0.125em 0 0.125em;
 }
 p{
    margin-top: 0.6125em;

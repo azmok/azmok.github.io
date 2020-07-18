@@ -2,45 +2,36 @@
    
    'use strict';
 
-   //####  add Imgae progress method
-   Image.prototype.completedPercentage = 0;
-   
-   Image.prototype.load = function(url){
-        var thisImg = this;
-        var xmlHTTP = new XMLHttpRequest();
-        xmlHTTP.open('GET', url,true);
-        xmlHTTP.responseType = 'arraybuffer';
-        xmlHTTP.onload = function(e) {
-            var blob = new Blob([this.response]);
-            thisImg.src = window.URL.createObjectURL(blob);
-        };
-        xmlHTTP.onprogress = function(e) {
-            thisImg.completedPercentage = parseInt(e.loaded / e.total);
-        };
-        xmlHTTP.onloadstart = function() {
-            thisImg.completedPercentage = 0;
-        };
-        xmlHTTP.send();
-   };
+   const ImageNewProps = {
+      completedPercentage: 0,
+      load: function(url){
+         const xhr = new XMLHttpRequest();
+         
+         xhr.addEventListener("progress", (e) => {
+            this.completedPercentage = parseInt(e.loaded / e.total);
+         });
+        
+         xhr.open('GET', url, true);
+         xhr.send();
+      },
+   }
+   // assign new properties
+   Object.assign( Image.prototype, ImageNewProps)
    
    
    let timerId = 0,
-   imgArr = [],
 	counter = 0,
    allLoaded = true;
    
-   const bar = $$('#bar'),
+   const imgArr = [],
+   bar = $$('#bar'),
    barInner = $$('#bar-inner'),
    garally = $$('#garally-container'),
    completedText = $$("#completedText"),
    barH = parseInt(
-      getComputedStyle(bar).getPropertyValue("height")
-   );
-      
-   
-   
-   //_( `noeloadingBarH:: ${noeloadingBarH}` )
-   const completedTextAnimation = () => {
+      window.getComputedStyle(bar).getPropertyValue("height")
+   ),
+   completedTextAnimation = () => {
       completedText.classList.add("completed");
       setTimeout(()=>{
          completedText.classList.remove("completed");
@@ -109,9 +100,6 @@
       wrapper.appendChild(img);
       wrapper.appendChild(cardElm);
       garally.appendChild(wrapper);
-               
-               
-               
    },
    fetchImage = function(url){
       let xhr = new XMLHttpRequest();
@@ -146,7 +134,7 @@
    };
    
    
-   //#####  'fetchImage(url)' when encountering scroll end and all images loaded
+   //#####  'fetchImage(url)' when encountering scrollEnd and all images loaded
    window.on("scroll", function(e){
       const bRect = body.getBoundingClientRect(),
       windowBtm = window.innerHeight,  // y-axis from client's top-left corner: not changing
