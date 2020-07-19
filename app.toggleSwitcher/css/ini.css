@@ -34,3 +34,7 @@ p:first-child{
 strike{
    color: #bbb;
 }
+label{
+   user-select: none;
+   cursor: pointer;
+}
