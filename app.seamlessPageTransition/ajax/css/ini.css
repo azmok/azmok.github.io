@@ -39,7 +39,7 @@ strike{
 button{
    user-select: none;
    cursor: pointer;
-   }
+}
 
 @media (max-width: 414px){
    :root{
