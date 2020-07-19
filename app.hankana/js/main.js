@@ -14,20 +14,7 @@
  * 
  * 
  * 
- * 
- #####  Clipborad.js MIT Licence  #####
- * 
- * The MIT License (MIT)
- * Copyright © 2019 Zeno Rocha <hi@zenorocha.com>
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- *#
- * THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- *
  */
-
 
 import { hkhkDic_basic as basicDict } from "./dic/hkhkDic_basic.js";
 import { hkhkDic_punc1 as puncDict1 } from "./dic/hkhkDic_punc1.js";
@@ -35,7 +22,7 @@ import { hkhkDic_punc2 as puncDoct2  } from "./dic/hkhkDic_punc2.js";
 import { _, $$, isArray, toArray } from "./myModule.mod.js";
 
 
-//"use strict";
+"use strict";
 
 let dictionary = basicDict.concat(puncDict1, puncDoct2 ),
 hex2Code = hex => parseInt(hex, 16),
@@ -108,7 +95,42 @@ clearAll = ev => {
    });
 },
 addClass = (elm, className) => elm.classList.add( className ),
-removeClass = (elm, className) => elm.classList.remove( className );
+removeClass = (elm, className) => elm.classList.remove( className ),
+toggleClassTimer = (elm, className, duration) => {
+   elm.classList.add( className );
+   
+   setTimeout(() => {
+      removeClass(elm, className);
+   }, duration);
+      
+},
+copyTextToClipboard = (targetElm) => {
+   /**  
+    ** Clippboard API: 'navigator.clipboard.xxx' 
+      
+    ** my memo:: this api doesnt work well on 'compositiosatrt/compositioend' event of iPad. 
+      **/
+   
+   const cboard = navigator.clipboard;
+      
+   try{
+      if( cboard ){
+         // copy to navigator.clipboard
+         cboard.writeText(targetElm.value)
+            .then( () => {
+               // make 'copied' message elm visible
+               toggleClassTimer(msgBoard, "visible", 1000);
+            })
+            .catch( e => {
+               console.error( `${e.name}: ${e.message}` ); 
+            });
+      } else {
+         throw new Error("'window.navigator.clipboard' isn't implemented in your browser.")
+      }
+   } catch(e){
+      console.error(`${e.name}: ${e.message}`);
+   }
+}
 
 let input = $$(".io-in")[0],
 output = $$(".io-out")[0],
@@ -120,7 +142,7 @@ msgBoard = $$('#msg-board');
 output.disabled = true;
 
 
-input.on("keyup", e => {
+input.on("change", e => {
    e.preventDefault();
    
    let str = input.value,
@@ -134,9 +156,7 @@ input.on("keyup", e => {
    
    output.value = str_replaced;
    output.disabled = false;
-
 });
-
 
 
 copyBtn.on("click", e => {
@@ -144,8 +164,10 @@ copyBtn.on("click", e => {
    
    addClass(copyBtn, "clicked");
    removeClass(clearBtn, "clicked");
-   addClass(msgBoard, "visible");
-})
+   
+   copyTextToClipboard(output);
+});
+
 
 clearBtn.on("click", e => {
    e.preventDefault();
@@ -154,11 +176,5 @@ clearBtn.on("click", e => {
    
    addClass(clearBtn, "clicked");
    removeClass(copyBtn, "clicked");
-   removeClass(msgBoard, "visible");
+   
 });
-
-
-/*** Clicpboard.js ****/
-new ClipboardJS('.btn-copy'); 
-/*********************/
-/**/
