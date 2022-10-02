@@ -1,0 +1,28 @@
+@import '../../css/components/color/_ini.css';
+@import '../../css/components/dom/paragraph.css';
+@import '../../css/components/barebone/layout.css';
+
+
+.label{
+   padding: 1.75rem 2rem 1.75rem 3rem;
+   font-size: 0.9375em;
+   width: calc(100% + 4rem);
+   transform: translateX(-2rem);
+   box-sizing: border-box;
+   margin-top: 2.0625em;
+   background: var(--amber-50);
+   border-left: 8px solid var(--amber-300);
+}
+
+.en .label{
+   font-size: 0.9375em;
+}
+
+.label .en{
+   font-size: 1.0625em;
+}
+
+html.dark .label{
+   background: var(--amber-dark-bg) !important;
+   border-left: 8px solid var(--amber-dark-border);
+}

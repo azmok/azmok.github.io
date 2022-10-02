@@ -1,0 +1,21 @@
+figure:has(blockquote){
+   padding: 4rem 0 6rem 4rem;
+}
+
+figure blockquote,
+figure blockquote *,
+figure figcaption,
+figure figcaption *{
+   font-family: var(--font-serif-jp);
+   font-size: 0.9375em;
+   line-height: inherit;
+   letter-spacing: -0.6px;
+   font-weight: 300;
+   font-style: italic;
+}
+
+figure figcaption{
+   padding-top: 1em;
+   text-align: right;
+   padding-right: 3em;
+}

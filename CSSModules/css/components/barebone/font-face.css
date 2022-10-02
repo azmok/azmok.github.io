@@ -1,0 +1,229 @@
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Black.otf') format('opentype');
+   font-weight: 900;
+}
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Bold.otf') format('opentype');
+   font-weight: 700;
+}
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Medium.otf') format('opentype');
+   font-weight: 500;
+}
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Regular.otf') format('opentype');
+   font-weight: 400;
+}
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Light.otf') format('opentype');
+   font-weight: 300;
+}
+@font-face{
+   font-family: 'Noto Sans JP';
+   src: url('../../../src/fonts/Noto_Sans_JP/NotoSansJP-Thin.otf') format('opentype');
+   font-weight: 100;
+}
+
+
+
+
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-Black.otf') format('opentype');
+   font-weight: 900;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-Bold.otf') format('opentype');
+   font-weight: 700;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-SemiBold.otf') format('opentype');
+   font-weight: 600;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-Medium.otf') format('opentype');
+   font-weight: 500;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-Regular.otf') format('opentype');
+   font-weight: 400;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-Light.otf') format('opentype');
+   font-weight: 300;
+}
+@font-face{
+   font-family: 'Noto Serif JP';
+   src: url('../../../src/fonts/Noto_Serif_JP/NotoSerifJP-ExtraLight.otf') format('opentype');
+   font-weight: 200;
+}
+
+
+
+
+@font-face{
+   font-family: 'Fira Code';
+   src: url('../../../src/fonts/Fira_Code_v6.2/woff2/FiraCode-VF.woff2') format('woff2-variations');
+   font-weight: 100 1000;
+   font-stretch: 25% 151%;
+}
+
+
+
+
+@font-face{
+   font-family: 'Source Serif 4';
+   src: url('../../../src/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf') format('woff2-variations');
+   font-weight: 100 1000;
+   font-stretch: 25% 151%;
+   font-style: normal;
+}
+
+
+
+
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+   font-weight: 900;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+   font-weight: 700;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+   font-weight: 500;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+   font-weight: 400;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+   font-weight: 300;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+   font-weight: 100;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype');
+   font-weight: 900;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype');
+   font-weight: 700;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype');
+   font-weight: 500;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-RegularItalic.ttf') format('truetype');
+   font-weight: 400;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-LightItalic.ttf') format('truetype');
+   font-weight: 300;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Roboto';
+   src: url('../../../src/fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+   font-weight: 100;
+   font-style: italic;
+}
+
+
+
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-Heavy.otf') format('opentype');
+   font-weight: 900;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-Bold.otf') format('opentype');
+   font-weight: 700;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-Medium.otf') format('opentype');
+   font-weight: 500;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-Regular.otf') format('opentype');
+   font-weight: 400;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-Light.otf') format('opentype');
+   font-weight: 300;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-ExtraLight.otf') format('opentype');
+   font-weight: 200;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-HeavyIt.otf') format('opentype');
+   font-weight: 900;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-BoldIt.otf') format('opentype');
+   font-weight: 700;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-MediumIt.otf') format('opentype');
+   font-weight: 500;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-RegularIt.otf') format('opentype');
+   font-weight: 400;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-LightIt.otf') format('opentype');
+   font-weight: 300;
+   font-style: italic;
+}
+@font-face{
+   font-family: 'Source Han Code JP';
+   src: url('../../../src/fonts/source-han-code-jp-2.012R/OTF/SourceHanCodeJP-ExtraLightIt.otf') format('opentype');
+   font-weight: 200;
+   font-style: italic;
+}

@@ -1,0 +1,36 @@
+.g1{ /* yellow-pink */
+   background: linear-gradient(90deg, #FACD68, #FC76B3);
+}
+.g2{ /* skyblue-puple */
+   background: linear-gradient(90deg, #1DE5E2,  #B588F7);
+}
+.g3{
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(130,118,195,1) 50%, rgba(252,176,69,1) 100%);
+}
+.g4{ /* skyblue-purple */
+   background: linear-gradient(90deg, #1DE5E2, #B588F7);
+}
+
+.mono1{ /* yellow */
+   background: linear-gradient(90deg, #FFE324, #FFB533);
+}
+.mono2{ /* orange */
+   background: linear-gradient(90deg, #FFCB52, #FF7B02);
+}
+.mono3{ /* cyan */
+   background: linear-gradient(90deg, #00F7A7, #04F5ED);
+}
+.mono4{ /* blue */
+   background: linear-gradient(90deg, #5581F1, #1153FC);
+}
+.mono5{ /* green */
+   background: linear-gradient(90deg, #2AFEB7, #08C792);
+}
+
+/***
+ * `background-clip` must be positioned after `background-color`
+ **/
+.grad{/* purple-orange */
+   background-clip: text;
+   color: transparent;   
+}

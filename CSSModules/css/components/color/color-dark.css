@@ -1,0 +1,69 @@
+:root{
+   --amber-dark-bg: #302a1b;
+   --amber-dark-border: #b58d26;
+   
+   --dark-bg-color: #26241e;
+   --dark-tx-color: #c4c4c4;
+}
+
+html.dark{
+   background: var(--dark-bg-color) !important;
+   color: var(--dark-tx-color) ! important;
+}
+
+html.dark a{
+   color: var(--dark-tx-color) ! important;
+   /* underline */
+   background: linear-gradient(transparent 96%, var(--dark-tx-color) 0%) !important;
+}
+
+/* bullet */
+html.dark ul li::before {
+   background: var(--dark-tx-color) !important;
+}
+
+html.dark figure *{
+   color: var(--dark-tx-color) !important;
+}
+
+html.dark *:not(pre) > code{
+   background: var(--slate-700);
+   color: var(--slate-200);
+}
+
+html.dark pre:has(code){
+   background: #363534 !important;
+}
+
+/* dark mode when system dark mode enabled *
+@media (prefers-color-scheme: dark) {
+   html{
+      background: var(--zinc-800) !important;
+      color: var(--zinc-300) !important;
+   }
+   html a{
+      color: var(--zinc-300) !important;
+      /* underline *
+      background: linear-gradient(transparent 96%, var(--zinc-300) 0%);
+   }
+   
+   /* bullet *
+   html ul li::before {
+      background: var(--zinc-300) !important;
+   }
+   
+   /* underline *
+   html a::before{
+      background: var(--zinc-400) !important;
+   }
+   
+   html figure blockquote,
+   html figure figcaption,
+   html figure figcaption a{
+      color: var(--zinc-400) !important;
+   }
+   
+   html figure figcaption a{
+      background: linear-gradient(transparent 96%, var(--zinc-400) 0%);
+   }
+}/**/

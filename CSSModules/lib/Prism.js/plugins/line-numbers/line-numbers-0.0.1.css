@@ -1,0 +1,60 @@
+/* css reset for predefined css that lead to mislayout of line-numbers  */
+pre,
+pre *{
+   border: unset !important;
+   
+}
+pre *{
+   padding-top: unset !important;
+   padding-bottom: unset !important;
+}
+
+
+
+
+pre[class*=language-].line-numbers {
+   position: relative;
+   padding-left: 3.8em !important;
+   counter-reset: linenumber;
+   font-size: 1rem !important;
+   padding-top: 1rem;
+   padding-bottom: 1rem;   
+   overflow-x: auto;
+}
+
+pre.line-numbers > code,
+pre.line-numbers > span.line-numbers-rows,
+pre.line-numbers > span.line-numbers-rows > span{
+   font-size: 1rem !important;
+}
+
+
+pre.line-numbers span.line-numbers-rows {
+   display: block;
+   position: absolute;
+   top: 1rem;
+   left: 0;
+   width: 3em;
+   letter-spacing: -1px;
+   white-space: normal;
+   border-right: 1px solid #777;
+   padding-right: 0.5em;
+}
+
+pre.line-numbers span.line-numbers-rows > span {
+   display: block;
+   counter-increment: linenumber;
+   color: #777;
+   text-align: right;
+}
+
+span.line-numbers-rows>span::before {
+   content: counter(linenumber);
+}
+
+pre.line-numbers,
+pre.line-numbers>code,
+span.line-numbers-rows,
+span.line-numbers-rows > span{
+   line-height: 1.5 !important;
+}

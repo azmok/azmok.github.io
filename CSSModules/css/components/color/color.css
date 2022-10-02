@@ -1,0 +1,91 @@
+:root{
+   --text-def: #292929;
+   --bg-def: #fffff8;
+   
+   --slate-800: #0f172a;
+   --slate-700: #334155;
+   --slate-600: #475569;
+   --slate-500: #64748b;
+   --slate-400: #94a3b8;
+   --slate-300: #cbd5e1;
+   --slate-200: #e2e8f0;
+   --slate-100: #f1f5f9;
+   --slate-50: #f8fafc;
+   
+   --stone-50: #fafaf9;
+   
+   --amber-50: #fffbeb;
+   --amber-100: #fef3c7;
+   --amber-200: #fde68a;
+   --amber-300: #fcd34d;
+   --amber-400: #fbbf24;
+   --amber-500: #f59e0b;
+   --amber-600: #d97706;
+   --amber-700: #b45309;
+   --amber-800: #92400e;
+   --amber-900: #78350f;
+   
+   --zinc-900: #18181b;
+   --zinc-800: #27272a;
+   --zinc-700: #3f3f46;
+   --zinc-600: #52525b;
+   --zinc-500: #71717a;
+   --zinc-400: #a1a1aa;
+   --zinc-300: #d4d4d8;
+   --zinc-200: #e4e4e7;
+   --zinc-100: #f4f4f5;
+   --zinc-50: #fafafa;
+   
+   --stone-50: #fafaf9;
+   --stone-100: #f5f5f4;
+   --stone-200: #e7e5e4;
+   --stone-300: #d6d3d1;
+   --stone-400: #a8a29e;
+   --stone-500: #78716c;
+}
+
+html{
+   color: #111;/* tufte css */
+   color: var(--text-def);
+   background: var(--bg-def);
+}
+
+a{
+   color: #292929;
+   
+   /* underline */
+   background: linear-gradient(transparent 96%, var(--slate-400) 0%);
+}
+
+a.def{
+   text-decoration: underline;
+   background: none;
+}
+
+/* pre having code */
+pre:has(code){
+   background: var(--slate-800);
+}
+
+/* code-block */
+pre > code {
+   background: transparent;
+   color: #aaa;
+}
+
+/* inline-code */
+*:not(pre) > code{
+   color: var(--slate-800);
+   background: #e8e8e5;
+}
+
+/* bullet */
+ul li::before {
+   background: var(--slate-700);
+}
+
+figure blockquote,
+figure figcaption,
+figure figcaption a{
+   color: var(--slate-800);
+}

@@ -1,0 +1,9 @@
+:root{
+   --scale-15: 15px;
+   --scale-16: 16px;
+   --scale-17: 17px;
+}
+
+html{
+   font-size: var(--scale-16);
+}

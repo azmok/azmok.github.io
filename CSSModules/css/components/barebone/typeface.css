@@ -1,0 +1,27 @@
+:root{
+   /**
+      jp:
+         Sans:
+            Noto Sans JP
+         Serif:
+            Noto Serif JP
+         Mono:
+            Source Han Code JP
+      en:
+         Sans:
+            Roboto
+         Serif:
+            Source Serif 4
+         Mono:
+            Fira Code
+    **/
+   --font-sans: 'Roboto', sans-serif;
+   --font-sans-jp: 'Roboto', 'Noto Sans JP', sans-serif;
+   
+   --font-serif: 'Source Serif 4', serif;
+   --font-serif-jp: 'Source Serif 4', 'Noto Serif JP', serif;
+   
+   --font-code: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   --font-code-jp: 'Fira Code', 'Source Han Code JP', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   --font-code-jp2: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace, 'Source Han Sans';
+}

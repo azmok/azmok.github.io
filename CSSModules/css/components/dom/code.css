@@ -1,0 +1,51 @@
+/* pre */
+pre{
+   font-size: 1.125rem !important;
+   padding: 2em;
+	border-radius: .3em;
+   overflow-x: auto;
+}
+
+/* inline-code */
+code{
+   font-family: var(--font-code-jp);
+   font-weight: 300;
+   letter-spacing: -1px;
+}
+*:not(pre) > code{
+   font-weight: inherit;
+   border-radius: 8px;
+   padding: 0.25em 0.5em 0.1em 0.5em;
+   font-size: 0.9375em;
+   letter-spacing: -0.025rem;
+}
+
+/* code block */
+pre > code,
+pre[class*="language-"] > code,
+pre > code[class*="language-"]{
+   font-size: 1rem;
+   padding-left: 0;
+}
+   /* pre backgorund in code block  */
+pre:has(code)[class*="language-"],
+pre:has(code[class*="language-"]),
+pre:has(code){
+   background: #272822;
+}
+
+   /* no class `pre > code` */
+pre:not([class*="language-"]) > code,
+pre > code:not([class*="language-"]){
+   font-family: var(--font-code-jp2);
+   font-size: 1.0625rem;
+}
+
+/* no class pre:has( code(no-class) ) */
+/* no class `pre > code` */
+pre:not([class*="language-"]) > code,
+pre > code:not([class*="language-"]),
+pre:has( code:not([class*="language-"]) ){
+   letter-spacing: -0.04em;
+   font-weight: 300;
+}
