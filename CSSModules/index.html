@@ -4,16 +4,38 @@
    <meta charset="UTF-8" />
    <title>CSS Modules Demo Page</title>
    <link rel="stylesheet" href="css/ini.css" />
+<style>
+html body en{
+   padding-right: .05em;
+   padding-left: .05em;
+   vertical-align: -0.03em;
+   font-size: 1.03rem;
+}
+
+
+html body h4 a{
+   font-weight: 300;
+   font-size: 1rem;
+   font-family: var(--font-code-jp) !important;
+}
+
+.mgt-2{
+   margin-top: 2rem;
+}
+.mgt-12{
+   margin-top: 12rem;
+}
+</style>
 </head>
 <body>
    <div class="text card main en">
       <h1 class="grad g1">Demo Page</h1>
       
-      <h4 class="ta-center grad g4 mgt-5">
-         <a href="test/all-in-one.html">demo 1(日本語&English)</a>
+      <h4 class="ta-center grad g4 mgt-12">
+         <a href="test/all-in-one.html"><span class="grad g4"><en>demo 1(</en>日本語<en>&English)</en></span></a>
       </h4>
-      <h4 class="ta-center grad g4">
-         <a href="test/all-in-one.en.html">demo 2(English Only)</a>
+      <h4 class="ta-center grad g4 mgt-2">
+         <a href="test/all-in-one.en.html"><span class="grad g4"><en>demo 2(English Only)</en></span></a>
       </h4>
          
    </div>
