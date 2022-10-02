@@ -37,7 +37,7 @@ pre.line-numbers span.line-numbers-rows {
    width: 3em;
    letter-spacing: -1px;
    white-space: normal;
-   border-right: 1px solid #777;
+   border-right: 1px solid #777 !important;
    padding-right: 0.5em;
 }
 
