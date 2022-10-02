@@ -1,11 +1,11 @@
-import { _, create, setAttr, appendTo } from './../../js/autil-1.0.4.mod.js'
+import { _, create, setAttr, appendTo } from 'https://azmok.github.io/CSSModules/js/autil-1.0.4.mod.js'
 
 
 /* relative to '.html' file <script> attached */
 const url_prism_css = 
-   "../lib/Prism.js/okaidia.css",
+   "https://azmok.github.io/CSSModules/lib/Prism.js/okaidia.css",
 url_prism_js = 
-   "../lib/Prism.js/prism.min.js",
+   "https://azmok.github.io/CSSModules/lib/Prism.js/prism.min.js",
 head = document.head,
 body = document.body
 

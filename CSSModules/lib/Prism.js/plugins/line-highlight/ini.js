@@ -1,12 +1,12 @@
-import { _, create, setAttr, appendTo } from './../../../../js/autil-1.0.4.mod.js'
+import { _, create, setAttr, appendTo } from 'https://azmok.github.io/CSSModules/js/autil-1.0.4.mod.js'
 
 
 export default function(){
    /* relative to '.html' file <script> attached */
    const url_prism_plugin_highlight_css = 
-      "../lib/Prism.js/plugins/line-highlight/line-highlight.min.css",
+      "https://azmok.github.io/CSSModules/lib/Prism.js/plugins/line-highlight/line-highlight.min.css",
    url_prism_plugin_highlight_js = 
-      "../lib/Prism.js/plugins/line-highlight/line-highlight.min.js",
+      "https://azmok.github.io/CSSModules/lib/Prism.js/plugins/line-highlight/line-highlight.min.js",
    head = document.head,
    body = document.body
       
