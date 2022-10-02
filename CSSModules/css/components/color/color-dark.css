@@ -12,10 +12,22 @@ html.dark{
 }
 
 html.dark a{
-   color: var(--dark-tx-color) ! important;
+   position: relative;
+   display: table;
+   
+   color: var(--dark-tx-color);
    /* underline */
-   background: linear-gradient(transparent 96%, var(--dark-tx-color) 0%) !important;
+   background: linear-gradient(transparent 96%, var(--dark-tx-color) 0%);
 }
+html.dark a::before{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   display: table;
+   width: 100%;
+   border-bottom: 1px solid var(--dark-tx-color);
+}
+
 
 /* bullet */
 html.dark ul li::before {

@@ -36,6 +36,12 @@ figure > img + figcaption{
 .mgt-1{
    margin-top: 1rem !important;
 }
+.mgt-3{
+   margin-top: 3rem !important;
+}
+.mgt-5{
+   margin-top: 5rem !important;
+}
 
 /* margin-bottom */
 .mgb-0{
@@ -82,8 +88,11 @@ figure > img + figcaption{
    padding-bottom: 2rem !important;
 }
 
-.ta-center{
+.ta-center,
+.ta-center *{
    text-align: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 /*************
