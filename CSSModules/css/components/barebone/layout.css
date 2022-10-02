@@ -82,6 +82,10 @@ figure > img + figcaption{
    padding-bottom: 2rem !important;
 }
 
+.ta-center{
+   text-align: center;
+}
+
 /*************
  * SmartPhone
  *******/
