@@ -1,4 +1,4 @@
-import doDarkModeSwitcher from './darkModeSwitcher.js/ini.js'
+import doDarkModeSwitcher from 'https://azmok.github.io/CSSModules/modules/darkModeSwitcher.js/ini.js'
 import { create, setAttr, appendTo } from 'https://azmok.github.io/CSSModules/js/autil-1.0.4.mod.js'
 
 
