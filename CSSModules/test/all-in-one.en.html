@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+   <link rel="stylesheet" href="../css/_ini.css" />
+   <script type="module" src="../js/_ini.js" defer></script>
+   
+   <script type="module" src="../lib/Prism.js/_ini.js" defer></script>
+   <script type="module" src="../modules/_ini.js" defer></script>
+   <script src="a.js" defer></script>
+   
+   <title>Document</title>
+</head>
+<body class="line-numbers">
+
+
+<div class="card main text en" lang="en">
+   <h1 class="grad g1 mgb">Understanding Garbage Collection in JavaScriptCore From Scratch</h1>
+   <ul>
+      <li><a href="#" class="external en">this is link</a></li>
+      <li><a href="#" class="external en">"stop-the-world”, and then transfer control back to the mutator side.</a></li>
+   </ul>
+
+
+   <p style="font-family: -apple-system;">Filip Pizlo’s blog post on GC is great at explaining the novelties of JSC’s GC, and also positions it within the context of various GC schemes in academia and industry. However, as someone with little GC background, I felt the blog alone insufficient for me to get a solid understanding of the algorithm and the motivation behind the design. Through digging into the code, and with some great help from Saam Barati, one of JSC’s lead developers, I wrote up this blog post in the hope that it can help more people understand this beautiful design.</p>
+   <p>Filip Pizlo’s blog post on GC is great at explaining the novelties of JSC’s GC, and also positions it within the context of various GC schemes in academia and industry. However, as someone with little GC background, I felt the blog alone insufficient for me to get a solid understanding of the algorithm and the motivation behind the design. Through digging into the code, and with some great help from Saam Barati, one of JSC’s lead developers, I wrote up this blog post in the hope that it can help more people understand this beautiful design.</p>
+   <ul>
+      <li>CompleteSubspace: this is a segregated allocator responsible for allocating small objects (max size about 8KB).</li>
+      <li>PreciseAllocation: this is used to handle large allocations that cannot be handled by the CompleteSubspace allocator[8].</li>
+      <li>IsoSubspace: each IsoSubspace is used to allocate objects of a fixed type with a fixed size.</li>
+   </ul>
+   
+   <ol>
+      <li>Most objects collected by the GC are young objects (died when they are still in eden), so an eden GC (which only collects the eden) is sufficient to reclaim most newly allocated memory.
+      </li>
+      <li>Pointers from old space to eden is much rarer than pointers from eden to old space or pointers from eden to eden, so an eden GC’s runtime is approximately linear to the size of the eden, as it only needs to start from a small subset of the old space. This implies that the cost of GC can be amortized by the cost of allocation.</li>
+   </ol>
+   <p>IsoSubspace is mostly a simplified CompleteSubspace, so we will ignore it for the purpose of this post. CompleteSubspace is the one that handles the common case: small allocations, and PreciseAllocation is mostly the rare slow path for large allocations.</p>
+   
+   <figure>
+      <img src="../src/img/unsplash-1.jpg" alt="test image" class="fullwidth" />
+      <figcaption>
+         <a href="https://unsplash.com/photos/GHIZp1rgV0A">Thanks to Andrew Valdivia @donovan_valdivia for making this photo available freely on Unsplash 🎁</a>
+      </figcaption>
+   </figure>
+   <figure>
+      <img src="../src/img/unsplash-2.jpg" alt="test image" class="fullwidth" />
+      <figcaption>
+         <a href="https://unsplash.com/photos/kRom8b8Il_Y">Thanks to OPPO Find X5 Pro @oppofindx5pro for making this photo available freely on Unsplash 🎁</a>
+      </figcaption>
+   </figure>
+   
+   <p>In August, 164,685 images were submitted to the library. Here are 12 fabulous images that caught the eye of the Unsplash submissions team this past month — from an up-close volcano eruption to crazy lighting effects from a drone.</p>
+
+   
+   
+   <h2>Generational GC Basics</h2>
+   <p>In JSC’s generational GC model, the heap consists of a small “new space” (eden), holding the newly allocated objects, and a large “old space” holding the older objects that have survived one GC cycle. Each GC cycle is either an eden GC or a full    GC. New objects are allocated in the eden. When the eden is full, an eden GC is invoked to garbage-collect the unreachable objects in eden. All the surviving objects in eden are then considered to be in the old space[11]. To reclaim objects in the old space, a full GC is needed.
+   </p>
+   <pre class="language-js" data-line="3"><code>let age = prompt("What is your age?", 18);
+
+let welcome = (age < 18) ?
+   () => alert('Hello!') :
+   () => alert("Greetings!");
+
+welcome();</code></pre>
+   <p>The effectiveness of the above scheme <code>() => console.log("hi")</code> relies on the so-called “generational hypothesis”:</p>
+   <p>Pointers from old space to eden is much rarer than pointers from eden to old space or pointers from eden to eden, so an eden GC’s runtime is approximately linear to the size of the eden, as it only needs to start from a small subset of the old space. This implies that the cost of GC can be amortized by the cost of allocation.</p>
+   
+   <div class="label">Memory allocators and GCs are tightly coupled by nature – the allocator allocates memory to be reclaimed by the GC, and the GC frees memory to be reused by the allocator. In this section, we will briefly introduce JSC’s memory allocators.
+
+   At</div>
+   <h3>Practically every GC scheme uses some kind of metadata to track which objects are alive</h3>
+   <p>The inlined metadata cellState is easy to access for the mutator thread (the thread executing JavaScript code), since it is just a field in the object. However, it has bad memory locality for the GC and allocators, which need to quickly traverse through all the metadata of all objects in some block owned by CompleteSubspace (which is the common case).
+   <figure>
+      <blockquote>
+         <p>Outlined metadata have the opposite performance characteristics: they are more expensive to access for the mutator thread, but since they are aggregated into bitvectors and stored in the block footer of each block, GC and allocators can traverse them really fast.</p>
+         <p>So JSC keeps both inlined and outlined metadata to get the better of both worlds: the mutator thread’s fast path will only concern the inlined cellState, while the GC and allocator logic can also take advantage of the memory locality of the outlined bits isNew and isMarked.</p>
+      </blockquote>
+      <figcaption>&mdash;<a href="https://262.ecma-international.org/13.0/index.html">ECMAScript® 2022 language specification</a></figcaption>
+   </figure>
+   <p>Of course, the cost of this is a more complex design… so we have to unfold it bit by bit.
+   </p>
+   <p>Pointers from old space to eden is much rarer than pointers from eden to old space or pointers from eden to eden, so an eden GC’s runtime is approximately linear to the size of the eden, as it only needs to start from a small subset of the old space. This implies that the cost of GC can be amortized by the cost of allocation.
+   </p>
+   <p>Each GC cycle is either an eden GC or a full GC. New objects are allocated in the eden. When the eden is full, an eden GC is invoked to garbage-collect the unreachable objects in eden. All the surviving objects in eden are then considered to be in the old space[11].</p>
+</div>
+
+
+
+
+</body>
+</html>

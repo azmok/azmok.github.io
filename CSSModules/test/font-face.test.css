@@ -1,0 +1,111 @@
+@import '../css/components/barebone/font-face.css';
+
+
+
+[class*='w-']::before,
+i::before{
+   position: absolute;
+   transform: translateY(-100%);
+   font-size: 0.75rem;
+   padding: 1px;
+   border-radius: 3px;
+}
+/* font-weight */
+   /* label */
+[class*='w-']::before{
+   color: #fff;
+   background: orange;
+}
+.w-1::before{
+   content: '100';
+}
+.w-2::before{
+   content: '200';
+}
+.w-3::before{
+   content: '300';
+}
+.w-4::before{
+   content: '400';
+}
+.w-5::before{
+   content: '500';
+}
+.w-6::before{
+   content: '600';
+}
+.w-7::before{
+   content: '700';
+}
+.w-8::before{
+ content: '800';
+}
+.w-9::before{
+ content: '900';
+}
+   /* weight */
+.w-1{
+   font-weight: 100;
+}
+.w-2{
+   font-weight: 200;
+}
+.w-3{
+   font-weight: 300;
+}
+.w-4{
+   font-weight: 400;
+}
+.w-5{
+   font-weight: 500;
+}
+.w-6{
+   font-weight: 600;
+}
+.w-7{
+   font-weight: 700;
+}
+.w-9{
+   font-weight: 900;
+}
+
+/* italic */
+   /* label */
+i::before{
+   color: #fff;
+   background: #111;
+   content: 'italic';
+}
+
+
+/* font-family */
+.fira{
+   font-family: 'Fira Code';
+}
+.ss4{
+   font-family: 'Source Serif 4';
+}
+.roboto{
+   font-family: 'Roboto';
+}
+.nSerifJP{
+   font-family: 'Noto Serif JP';
+}
+.nSansJP{
+   font-family: 'Noto Sans JP';
+}
+.shcJP{
+   font-family: 'Source Han Code JP';
+}
+
+/* default stylings */
+body{
+   padding: 6rem;
+   font-size: 1.25rem;
+}
+.en{
+   font-size: 1.4125rem;
+}
+section.en h1{
+   font-size: 2.5rem;
+   }
