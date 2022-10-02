@@ -1,0 +1,11 @@
+@import 'components/barebone/_ini.css';
+@import 'components/dom/_ini.css';
+@import 'components/lang/_ini.css';
+@import 'components/color/_ini.css';
+
+/* fix misalignment of browser css bug when line-numbers plugin applied 
+ *    only two point that line-height of pre & code specified in all css
+ *
+/*    /lib.Prism.js/okaidia.css          line-height: 1.4;
+/*    /css/components/dom/code.css       line-height: 1.4; */
+pre *{border: 1px solid transparent}
