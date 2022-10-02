@@ -17,11 +17,6 @@ export default function(){
          href: url_prism_plugin_lineNumbers_css,
       })
       .appendTo(head)
-   Array.from(head.children).map(child => {
-      child.tagName === "LINK" ? 
-         _( child.href, "\n", location.href ) : 
-         false
-   })
 
    // prismjs.plugin.line-numbers
    create('script')
@@ -29,5 +24,5 @@ export default function(){
          src: url_prism_plugin_lineNumbers_js,
       })
       .appendTo(body)
-   _(6)
+      
 }

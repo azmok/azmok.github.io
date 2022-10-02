@@ -28,14 +28,13 @@ create('script')
 import('./plugins/line-numbers/ini.js')
    .then(obj => {
       obj.default()
-      _(2)
    })
    .catch(err => _(err.message) )
+   
 // Plugin: Line Highlight
 import('./plugins/line-highlight/ini.js')
    .then(obj => {
       obj.default()
-      _(3)
    })
-   .catch(err => err)
+   .catch(err => _(err.message) )
    
